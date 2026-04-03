@@ -15,12 +15,17 @@
 - [简介 Introduction](#简介-introduction)
 - [综述论文 Survey Papers](#综述论文-survey-papers)
 - [方法分类 Methods](#方法分类-methods)
-  - [检测器 Detectors](#检测器-detectors)
-  - [Re-ID 模块](#re-id-模块)
-  - [Tracking-by-Detection](#tracking-by-detection)
-  - [Joint Detection and Tracking](#joint-detection-and-tracking)
-  - [Transformer-based Methods](#transformer-based-methods)
-  - [基于图神经网络 Graph-based Methods](#基于图神经网络-graph-based-methods)
+  - [传统目标追踪方法 Traditional Object Tracking Methods](#传统目标追踪方法-traditional-object-tracking-methods)
+    - [生成式方法 Generative Methods](#生成式方法-generative-methods)
+    - [判别式方法 Discriminative Methods](#判别式方法-discriminative-methods)
+    - [相关滤波追踪 Correlation Filter Tracking](#相关滤波追踪-correlation-filter-tracking)
+    - [手工特征 Handcrafted Features](#手工特征-handcrafted-features)
+    - [传统方法的局限性 Limitations of Traditional Methods](#传统方法的局限性-limitations-of-traditional-methods)
+  - [基于深度学习的多目标追踪 Deep Learning-based MOT](#基于深度学习的多目标追踪-deep-learning-based-mot)
+    - [检测后追踪 Tracking-by-Detection Pipeline](#检测后追踪-tracking-by-detection-pipeline)
+    - [联合检测与嵌入 Joint Detection and Embedding](#联合检测与嵌入-joint-detection-and-embedding)
+    - [基于图的关联 Graph-based Association](#基于图的关联-graph-based-association)
+    - [端到端Transformer追踪 End-to-End Transformer-based Tracking](#端到端transformer追踪-end-to-end-transformer-based-tracking)
 - [数据集 Datasets](#数据集-datasets)
 - [评估指标 Metrics](#评估指标-metrics)
 - [排行榜 Benchmarks](#排行榜-benchmarks)
@@ -47,67 +52,158 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ## 方法分类 Methods
 
-### 检测器 Detectors
+### 传统目标追踪方法 Traditional Object Tracking Methods
 
-> 用于初步目标检测的方法
+#### 生成式方法 Generative Methods
 
-| 年份 | 方法 | 会议/期刊 | 链接 |
-|------|------|-----------|------|
-| 2023 | YOLO-X | CVPR | [Paper](链接) \| [Code](链接) |
-| 2022 | ... | ... | ... |
-
----
-
-### Re-ID 模块
-
-> 外观特征提取，用于跨帧目标匹配
-
-| 年份 | 方法 | 会议/期刊 | 链接 |
-|------|------|-----------|------|
-| 2023 | ... | ... | ... |
-
----
-
-### Tracking-by-Detection
-
-> 先检测后关联的经典两阶段方法
+> 通过对目标外观建模来定位目标，如均值漂移、粒子滤波等。  
+> Model target appearance to locate objects (e.g., Mean Shift, Particle Filter).
 
 | 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
 |------|------|-----------|------|------|
-| 2016 | SORT | ICIP | 卡尔曼 + 匈牙利算法 | [Paper](链接) \| [Code](链接) |
-| 2017 | Deep SORT | ICIP | 加入外观特征 | [Paper](链接) \| [Code](链接) |
-| 2022 | ByteTrack | ECCV | 低置信度检测框利用 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
 
 ---
 
-### Joint Detection and Tracking
+#### 判别式方法 Discriminative Methods
 
-> 端到端检测与追踪联合训练
+> 将追踪转化为前景/背景二分类问题，在线更新分类器。  
+> Treat tracking as foreground/background classification with online classifier updates.
 
 | 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
 |------|------|-----------|------|------|
-| 2020 | FairMOT | IJCV | 平衡检测与 ReID | [Paper](链接) \| [Code](链接) |
-| 2021 | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... |
 
 ---
 
-### Transformer-based Methods
+#### 相关滤波追踪 Correlation Filter Tracking
 
-> 基于注意力机制的追踪方法
+> 利用循环矩阵和傅里叶变换高效计算目标响应图。  
+> Efficient target response map computation via circulant matrices and Fourier transform.
 
 | 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
 |------|------|-----------|------|------|
-| 2021 | TrackFormer | CVPR | 查询追踪 | [Paper](链接) \| [Code](链接) |
-| 2022 | MOTR | ECCV | 端到端 Transformer MOT | [Paper](链接) \| [Code](链接) |
-| 2023 | ... | ... | ... | ... |
+| 2010 | MOSSE | CVPR | 首个相关滤波追踪器 | [Paper](链接) |
+| 2014 | KCF | TPAMI | 核技巧 + 多通道特征 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
 
 ---
 
-### 基于图神经网络 Graph-based Methods
+#### 手工特征 Handcrafted Features
+
+> 依赖 HOG、LBP、颜色直方图等人工设计特征。  
+> Rely on manually engineered features such as HOG, LBP, and color histograms.
+
+| 年份 | 方法 | 会议/期刊 | 特征类型 | 链接 |
+|------|------|-----------|---------|------|
+| ... | ... | ... | ... | ... |
+
+---
+
+#### 传统方法的局限性 Limitations of Traditional Methods
+
+> 传统方法在遮挡、光照变化、密集场景下性能有限，推动了深度学习方法的发展。  
+> Traditional methods struggle with occlusion, illumination change, and crowded scenes, motivating deep learning approaches.
+
+---
+
+### 基于深度学习的多目标追踪 Deep Learning-based MOT
+
+---
+
+#### 检测后追踪 Tracking-by-Detection Pipeline
+
+> 先检测，后关联的经典两阶段框架。  
+> Classic two-stage framework: detect first, then associate.
+
+##### Detection and Feature Extraction
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| 2023 | YOLOv8 | — | 实时检测骨干 | [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+##### Appearance Modeling and Re-identification
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| 2017 | Deep SORT | ICIP | 深度外观描述子 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+##### Motion Modeling and Data Association
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| 2016 | SORT | ICIP | 卡尔曼滤波 + 匈牙利算法 | [Paper](链接) \| [Code](链接) |
+| 2022 | ByteTrack | ECCV | 利用低置信度检测框 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+---
+
+#### 联合检测与嵌入 Joint Detection and Embedding
+
+> 共享 Backbone，在单一网络中同时完成检测与 Re-ID。  
+> Shared backbone for simultaneous detection and Re-ID in a single network.
+
+##### Shared Backbone Architectures
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| 2020 | FairMOT | IJCV | 平衡检测与 ReID 分支 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+##### Multi-task Learning and Optimization
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| ... | ... | ... | ... | ... |
+
+---
+
+#### 基于图的关联 Graph-based Association
+
+> 将检测框和轨迹建模为图节点，用 GNN 学习关联权重。  
+> Model detections and trajectories as graph nodes; learn association weights via GNN.
+
+##### Graph Neural Networks for Data Association
 
 | 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
 |------|------|-----------|------|------|
 | 2020 | MPNTrack | CVPR | 消息传递网络 | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+##### Spatial-Temporal Graph Modeling
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| ... | ... | ... | ... | ... |
+
+---
+
+#### 端到端Transformer追踪 End-to-End Transformer-based Tracking
+
+> 基于注意力机制，无需手工设计后处理模块。  
+> Attention-based end-to-end tracking without hand-crafted post-processing.
+
+##### Self-Attention for Global Context
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| ... | ... | ... | ... | ... |
+
+##### Query-based Tracking Paradigm
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| 2021 | TrackFormer | CVPR | Track Query 持续追踪 | [Paper](链接) \| [Code](链接) |
+| 2022 | MOTR | ECCV | 端到端 Transformer MOT | [Paper](链接) \| [Code](链接) |
+| ... | ... | ... | ... | ... |
+
+##### Unified Detection and Association
+
+| 年份 | 方法 | 会议/期刊 | 亮点 | 链接 |
+|------|------|-----------|------|------|
+| ... | ... | ... | ... | ... |
 
 ---
 
