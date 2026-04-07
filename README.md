@@ -126,7 +126,6 @@
 
 #### Tracking-by-Detection Pipeline
 
-> 先检测，后关联的经典两阶段框架。  
 > Classic two-stage framework: detect first, then associate.
 
 ##### Detection and Feature Extraction
@@ -155,7 +154,6 @@
 
 #### Joint Detection and Embedding
 
-> 共享 Backbone，在单一网络中同时完成检测与 Re-ID。  
 > Shared backbone for simultaneous detection and Re-ID in a single network.
 
 ##### Shared Backbone Architectures
@@ -174,8 +172,7 @@
 ---
 
 #### Graph-based Association
-
-> 将检测框和轨迹建模为图节点，用 GNN 学习关联权重。  
+ 
 > Model detections and trajectories as graph nodes; learn association weights via GNN.
 
 ##### Graph Neural Networks for Data Association
@@ -195,7 +192,6 @@
 
 #### End-to-End Transformer-based Tracking
 
-> 基于注意力机制，无需手工设计后处理模块。  
 > Attention-based end-to-end tracking without hand-crafted post-processing.
 
 ##### Self-Attention for Global Context
@@ -230,7 +226,6 @@
 
 ## Contributing
 
-欢迎提交 PR 或 Issue 来补充论文、修正错误！  
 Feel free to open a PR or Issue to add papers or fix errors!
 
 ---
