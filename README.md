@@ -15,20 +15,20 @@
 - [Introduction](#introduction)
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
-    - [生成式方法 Generative Methods](#生成式方法-generative-methods)
-    - [判别式方法 Discriminative Methods](#判别式方法-discriminative-methods)
-    - [相关滤波追踪 Correlation Filter Tracking](#相关滤波追踪-correlation-filter-tracking)
-    - [手工特征 Handcrafted Features](#手工特征-handcrafted-features)
-    - [传统方法的局限性 Limitations of Traditional Methods](#传统方法的局限性-limitations-of-traditional-methods)
-  - [基于深度学习的多目标追踪 Deep Learning-based MOT](#基于深度学习的多目标追踪-deep-learning-based-mot)
-    - [检测后追踪 Tracking-by-Detection Pipeline](#检测后追踪-tracking-by-detection-pipeline)
-    - [联合检测与嵌入 Joint Detection and Embedding](#联合检测与嵌入-joint-detection-and-embedding)
-    - [基于图的关联 Graph-based Association](#基于图的关联-graph-based-association)
-    - [端到端Transformer追踪 End-to-End Transformer-based Tracking](#端到端transformer追踪-end-to-end-transformer-based-tracking)
-- [数据集 Datasets](#数据集-datasets)
-- [评估指标 Metrics](#评估指标-metrics)
-- [排行榜 Benchmarks](#排行榜-benchmarks)
-- [引用 Citation](#引用-citation)
+    - [Generative Methods](#generative-methods)
+    - [Discriminative Methods](#discriminative-methods)
+    - [Correlation Filter Tracking](#correlation-filter-tracking)
+    - [Handcrafted Features](#handcrafted-features)
+    - [Limitations of Traditional Methods](#limitations-of-traditional-methods)
+  - [Deep Learning-based MOT](#deep-learning-based-mot)
+    - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
+    - [Joint Detection and Embedding](#joint-detection-and-embedding)
+    - [Graph-based Association](#graph-based-association)
+    - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
+- [Datasets](#datasets)
+- [Metrics](#metrics)
+- [Benchmarks](#benchmarks)
+- [Citation](#citation)
 
 ---
 
@@ -45,7 +45,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ### Traditional Object Tracking Methods
 
-#### 生成式方法 Generative Methods
+#### Generative Methods
 
 > 通过对目标外观建模来定位目标，如均值漂移、粒子滤波等。  
 > Model target appearance to locate objects (e.g., Mean Shift, Particle Filter).
@@ -56,7 +56,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 判别式方法 Discriminative Methods
+#### Discriminative Methods
 
 > 将追踪转化为前景/背景二分类问题，在线更新分类器。  
 > Treat tracking as foreground/background classification with online classifier updates.
@@ -67,7 +67,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 相关滤波追踪 Correlation Filter Tracking
+#### Correlation Filter Tracking
 
 > 利用循环矩阵和傅里叶变换高效计算目标响应图。  
 > Efficient target response map computation via circulant matrices and Fourier transform.
@@ -80,7 +80,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 手工特征 Handcrafted Features
+#### Handcrafted Features
 
 > 依赖 HOG、LBP、颜色直方图等人工设计特征。  
 > Rely on manually engineered features such as HOG, LBP, and color histograms.
@@ -91,18 +91,18 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 传统方法的局限性 Limitations of Traditional Methods
+#### Limitations of Traditional Methods
 
 > 传统方法在遮挡、光照变化、密集场景下性能有限，推动了深度学习方法的发展。  
 > Traditional methods struggle with occlusion, illumination change, and crowded scenes, motivating deep learning approaches.
 
 ---
 
-### 基于深度学习的多目标追踪 Deep Learning-based MOT
+### Deep Learning-based MOT
 
 ---
 
-#### 检测后追踪 Tracking-by-Detection Pipeline
+#### Tracking-by-Detection Pipeline
 
 > 先检测，后关联的经典两阶段框架。  
 > Classic two-stage framework: detect first, then associate.
@@ -131,7 +131,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 联合检测与嵌入 Joint Detection and Embedding
+#### Joint Detection and Embedding
 
 > 共享 Backbone，在单一网络中同时完成检测与 Re-ID。  
 > Shared backbone for simultaneous detection and Re-ID in a single network.
@@ -151,7 +151,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 基于图的关联 Graph-based Association
+#### Graph-based Association
 
 > 将检测框和轨迹建模为图节点，用 GNN 学习关联权重。  
 > Model detections and trajectories as graph nodes; learn association weights via GNN.
@@ -171,7 +171,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-#### 端到端Transformer追踪 End-to-End Transformer-based Tracking
+#### End-to-End Transformer-based Tracking
 
 > 基于注意力机制，无需手工设计后处理模块。  
 > Attention-based end-to-end tracking without hand-crafted post-processing.
@@ -198,7 +198,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-## 数据集 Datasets
+## Datasets
 
 | 数据集 | 年份 | 场景 | 目标类型 | 链接 |
 |--------|------|------|----------|------|
@@ -211,7 +211,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-## 评估指标 Metrics
+## Metrics
 
 | 指标 | 全称 | 说明 |
 |------|------|------|
@@ -225,7 +225,7 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-## 排行榜 Benchmarks
+## Benchmarks
 
 ### MOT17 (Private Detector)
 
@@ -238,14 +238,14 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-## 引用 Citation
+## Citation
 
 
 
 
 
 
-## 贡献 Contributing
+## Contributing
 
 欢迎提交 PR 或 Issue 来补充论文、修正错误！  
 Feel free to open a PR or Issue to add papers or fix errors!
