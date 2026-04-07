@@ -47,10 +47,10 @@
 
 | Metric | Full Name | Formula | Description |
 |--------|-----------|---------|-------------|
-| MOTA | Multiple Object Tracking Accuracy | $1 - \frac{\|\text{FP}\| + \|\text{FN}\| + \|\text{IDSW}\|}{\|\text{gtDet}\|}$ | Jointly penalizes FP, FN, and identity switches; can be negative when errors exceed ground truth count |
-| MOTP | Multiple Object Tracking Precision | $\frac{1}{\|\text{TP}\|} \sum_{m \in \text{TP}} \text{IoU}_m$ | Mean IoU over all true positive matches; measures localization quality independently of MOTA |
-| IDF1 | Identity F1 Score | $\frac{\|\text{IDTP}\|}{\|\text{IDTP}\| + 0.5\|\text{IDFN}\| + 0.5\|\text{IDFP}\|}$ | Trajectory-level matching metric; more sensitive to prolonged identity switches than MOTA |
-| HOTA | Higher Order Tracking Accuracy | $\sqrt{\text{DetA}_\alpha \times \text{AssA}_\alpha}$ | Geometric mean of detection and association accuracy; averaged over IoU thresholds for threshold-agnostic evaluation |
+| MOTA | Multiple Object Tracking Accuracy | `1 - (FP + FN + IDSW) / gtDet` | Jointly penalizes FP, FN, and identity switches; can be negative when errors exceed ground truth count |
+| MOTP | Multiple Object Tracking Precision | `mean IoU over all TP matches` | Mean IoU over all true positive matches; measures localization quality independently of MOTA |
+| IDF1 | Identity F1 Score | `IDTP / (IDTP + 0.5·IDFN + 0.5·IDFP)` | Trajectory-level matching metric; more sensitive to prolonged identity switches than MOTA |
+| HOTA | Higher Order Tracking Accuracy | `sqrt(DetA × AssA)` | Geometric mean of detection and association accuracy; averaged over IoU thresholds for threshold-agnostic evaluation |
 | MT | Mostly Tracked | — | Percentage of ground truth trajectories covered for more than 80% of their lifespan |
 | ML | Mostly Lost | — | Percentage of ground truth trajectories covered for less than 20% of their lifespan |
 | IDs | Identity Switches | — | Total number of times a tracked identity incorrectly changes during tracking |
