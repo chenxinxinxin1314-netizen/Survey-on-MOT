@@ -31,16 +31,15 @@
 
 ---
 ## Datasets
-| Dataset | Year | Domain | Target Type | Link |
-|--------|------|------|----------|------|
-| MOT15 | 2015 | Pedestrian | Indoor / Outdoor | [官网](https://motchallenge.net/data/MOT15/) |
-| MOT16 | 2016 | Pedestrian | Street scenes | [官网](https://motchallenge.net/data/MOT16/) |
-| MOT17 | 2017 | Pedestrian | Multi-view street | [官网](https://motchallenge.net/data/MOT17/) |
-
-| MOT20 | 2020 | Pedestrian | Crowded scenes | [官网](https://motchallenge.net/data/MOT20/) |
-| DanceTrack | 2022 | Dance / Performance | Similar-looking persons |[官网](https://github.com/DanceTrack/DanceTrack) |
-SportsMOT | 2023 | Sports | Athletes (Basketball / Football / Volleyball) |[官网](https://deeperaction.github.io/datasets/sportsmot.html)|
-| BDD100K | 2020 | Autonomous Driving | Multi-class (car, pedestrian, truck, etc.) |[官网](https://www.bdd100k.com/) |
+| Dataset | Year | Domain | Target Type | Key Challenges | Link |
+|---------|------|--------|-------------|----------------|------|
+| MOT15 | 2015 | Pedestrian | Indoor / Outdoor | Varying camera motion, low resolution | [Official](https://motchallenge.net/data/MOT15/) |
+| MOT16 | 2016 | Pedestrian | Street scenes | Occlusion, detection noise | [Official](https://motchallenge.net/data/MOT16/) |
+| MOT17 | 2017 | Pedestrian | Multi-view street | Multiple detectors (DPM, FRCNN, SDP) | [Official](https://motchallenge.net/data/MOT17/) |
+| MOT20 | 2020 | Pedestrian | Crowded scenes | Extreme density, heavy occlusion | [Official](https://motchallenge.net/data/MOT20/) |
+| DanceTrack | 2022 | Dance / Performance | Similar-looking persons | Uniform appearance, non-linear motion | [Official](https://github.com/DanceTrack/DanceTrack) |
+| SportsMOT | 2023 | Sports | Athletes (Basketball / Football / Volleyball) | Fast motion, frequent interaction | [Official](https://deeperaction.github.io/datasets/sportsmot.html) |
+| BDD100K | 2020 | Autonomous Driving | Multi-class (car, pedestrian, truck, etc.) | Large scale, diverse weather & lighting | [Official](https://www.bdd100k.com/) |
 
 ---
 
