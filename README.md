@@ -37,8 +37,8 @@
 | MOT17 | 2017 | Pedestrian | Multi-view street | Multiple detectors (DPM, FRCNN, SDP) | [Official](https://motchallenge.net/data/MOT17/) |
 | MOT20 | 2020 | Pedestrian | Crowded scenes | Extreme density, heavy occlusion | [Official](https://motchallenge.net/data/MOT20/) |
 | DanceTrack | 2022 | Dance / Performance | Similar-looking persons | Uniform appearance, non-linear motion | [Official](https://github.com/DanceTrack/DanceTrack) |
-| SportsMOT | 2023 | Sports | Athletes (Basketball / Football / Volleyball) | Fast motion, frequent interaction | [Official](https://deeperaction.github.io/datasets/sportsmot.html) |
-| BDD100K | 2020 | Autonomous Driving | Multi-class (car, pedestrian, truck, etc.) | Large scale, diverse weather & lighting | [Official](https://www.bdd100k.com/) |
+| SportsMOT  | 2023 | Sports | Athletes (Basketball / Football / Volleyball) | Fast motion, frequent interaction | [Official](https://deeperaction.github.io/datasets/sportsmot.html) |
+| BDD100K    | 2020 | Autonomous Driving | Multi-class (car, pedestrian, truck, etc.) | Large scale, diverse weather & lighting | [Official](https://www.bdd100k.com/) |
 
 ---
 
@@ -46,14 +46,14 @@
 
 | Metric | Full Name | Formula | Description |
 |--------|-----------|---------|-------------|
-| MOTA | Multiple Object Tracking Accuracy | $1 - \frac{\vert\text{FP}\vert + \vert\text{FN}\vert + \vert\text{IDSW}\vert}{\vert\text{gtDet}\vert}$ | Jointly penalizes FP, FN, and identity switches; can be negative when errors exceed ground truth count |
+| MOTA | Multiple Object Tracking Accuracy  | $1 - \frac{\vert\text{FP}\vert + \vert\text{FN}\vert + \vert\text{IDSW}\vert}{\vert\text{gtDet}\vert}$ | Jointly penalizes FP, FN, and identity switches; can be negative when errors exceed ground truth count |
 | MOTP | Multiple Object Tracking Precision | $\frac{1}{\vert\text{TP}\vert} \sum\_{m \in \text{TP}} \text{IoU}\_m$ | Mean IoU over all true positive matches; measures localization quality independently of MOTA |
-| IDF1 | Identity F1 Score | $\frac{\vert\text{IDTP}\vert}{\vert\text{IDTP}\vert + 0.5\vert\text{IDFN}\vert + 0.5\vert\text{IDFP}\vert}$ | Trajectory-level matching metric; more sensitive to prolonged identity switches than MOTA |
-| HOTA | Higher Order Tracking Accuracy | $\sqrt{\text{DetA}\_{\alpha} \times \text{AssA}\_{\alpha}}$ | Geometric mean of detection and association accuracy; averaged over IoU thresholds for threshold-agnostic evaluation |
-| MT | Mostly Tracked | — | Percentage of ground truth trajectories covered for more than 80% of their lifespan |
-| ML | Mostly Lost | — | Percentage of ground truth trajectories covered for less than 20% of their lifespan |
-| IDs | Identity Switches | — | Total number of times a tracked identity incorrectly changes during tracking |
-| FPS | Frames Per Second | — | Inference speed; reflects the real-time applicability of the tracker |
+| IDF1 | Identity F1 Score                  | $\frac{\vert\text{IDTP}\vert}{\vert\text{IDTP}\vert + 0.5\vert\text{IDFN}\vert + 0.5\vert\text{IDFP}\vert}$ | Trajectory-level matching metric; more sensitive to prolonged identity switches than MOTA |
+| HOTA | Higher Order Tracking Accuracy     | $\sqrt{\text{DetA}\_{\alpha} \times \text{AssA}\_{\alpha}}$ | Geometric mean of detection and association accuracy; averaged over IoU thresholds for threshold-agnostic evaluation |
+| MT   | Mostly Tracked                     | — | Percentage of ground truth trajectories covered for more than 80% of their lifespan |
+| ML   | Mostly Lost                        | — | Percentage of ground truth trajectories covered for less than 20% of their lifespan |
+| IDs  | Identity Switches                  | — | Total number of times a tracked identity incorrectly changes during tracking |
+| FPS  | Frames Per Second                  | — | Inference speed; reflects the real-time applicability of the tracker |
 
 ---
 
@@ -65,9 +65,9 @@
 
 | Year | Method | Venue | Highlights | Link |
 |------|--------|-------|------------|------|
-| 1960 | Kalman Filter | Journal of Basic Engineering | Recursive Bayesian estimation under Gaussian noise and linear dynamics; foundational motion prediction component in modern trackers | [Paper](https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706) |
+| 1960 | Kalman Filter   | Journal of Basic Engineering  | Recursive Bayesian estimation under Gaussian noise and linear dynamics; foundational motion prediction component in modern trackers | [Paper](https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706) |
 | 2002 | Particle Filter | IEEE Trans. Signal Processing | Sequential Monte Carlo sampling; handles nonlinear motion and non-Gaussian noise via weighted particle representation | [Paper](https://ieeexplore.ieee.org/document/978374) |
-| 2003 | Mean Shift | IEEE TPAMI | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1197078) |
+| 2003 | Mean Shift      | IEEE TPAMI                    | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1197078) |
 
 ---
 
@@ -78,8 +78,8 @@
 | Year | Method | Venue | Highlights | Link |
 |------|--------|-------|------------|------|
 | 2004 | SVM Tracker | IEEE TPAMI | Margin-maximizing SVM decision boundary; strong theoretical generalization but quadratic support vector growth limits real-time use | [Paper](https://ieeexplore.ieee.org/document/1315094) |
-| 2009 | MILTrack | CVPR | Multiple Instance Learning replaces hard binary labels with bag-level supervision, substantially reducing model drift | [Paper](https://ieeexplore.ieee.org/document/5206737) |
-| 2015 | Struck | IEEE TPAMI | Structured output prediction over kernelized SVM; directly optimizes bounding-box loss, eliminating error-prone intermediate binary labeling | [Paper](https://ieeexplore.ieee.org/document/7360205) |
+| 2009 | MILTrack    | CVPR       | Multiple Instance Learning replaces hard binary labels with bag-level supervision, substantially reducing model drift | [Paper](https://ieeexplore.ieee.org/document/5206737) |
+| 2015 | Struck      | IEEE TPAMI | Structured output prediction over kernelized SVM; directly optimizes bounding-box loss, eliminating error-prone intermediate binary labeling | [Paper](https://ieeexplore.ieee.org/document/7360205) |
 
 ---
 
@@ -90,8 +90,8 @@
 | Year | Method | Venue | Highlights | Link |
 |------|--------|-------|------------|------|
 | 2010 | MOSSE | CVPR | First correlation filter tracker; learns filters in Fourier domain via FFT for real-time performance | [Paper](https://ieeexplore.ieee.org/document/5539960) |
-| 2014 | KCF | IEEE TPAMI | Kernel trick + multi-channel HOG features; circulant matrix formulation reduces ridge regression complexity from cubic to log-linear | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
-| 2017 | ECO | CVPR | Factorized convolution operators + compact sample representation; significantly reduces model complexity and computational overhead | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
+| 2014 | KCF   | IEEE TPAMI | Kernel trick + multi-channel HOG features; circulant matrix formulation reduces ridge regression complexity from cubic to log-linear | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
+| 2017 | ECO   | CVPR | Factorized convolution operators + compact sample representation; significantly reduces model complexity and computational overhead | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
 | 2017 | CSR-DCF | CVPR | Spatial reliability weights to suppress boundary effects from circular convolution; channel-wise feature selection for robustness | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
 
 ---
@@ -102,9 +102,9 @@
 
 | Year | Feature | Venue | Type | Highlights | Link |
 |------|---------|-------|------|------------|------|
-| 2002 | LBP | IEEE TPAMI | Texture | Binary pixel comparison encoding; invariant to monotonic illumination changes with low computational cost | [Paper](https://ieeexplore.ieee.org/document/1017623) |
-| 2005 | HOG | CVPR | Shape / Gradient | Local edge and gradient orientation histograms; highly discriminative for pedestrian silhouette boundaries | [Paper](https://ieeexplore.ieee.org/document/1467360) |
-| 2009 | Color Names | IEEE TIP | Color / Appearance | Probabilistic mapping from RGB to linguistic color terms; robust to illumination variation | [Paper](https://ieeexplore.ieee.org/document/4774359) |
+| 2002 | LBP         | IEEE TPAMI | Texture            | Binary pixel comparison encoding; invariant to monotonic illumination changes with low computational cost | [Paper](https://ieeexplore.ieee.org/document/1017623) |
+| 2005 | HOG         | CVPR       | Shape / Gradient   | Local edge and gradient orientation histograms; highly discriminative for pedestrian silhouette boundaries | [Paper](https://ieeexplore.ieee.org/document/1467360) |
+| 2009 | Color Names | IEEE TIP   | Color / Appearance | Probabilistic mapping from RGB to linguistic color terms; robust to illumination variation | [Paper](https://ieeexplore.ieee.org/document/4774359) |
 
 ---
 
@@ -112,10 +112,10 @@
 
 | Limitation | Description |
 |------------|-------------|
-| **Weak Representation** | Handcrafted features (HOG, LBP, Color Names) require extensive domain expertise and generalize poorly across diverse object categories and conditions |
-| **Model Drift** | Online classifiers with fixed learning rates and limited temporal memory accumulate errors during prolonged occlusions or rapid appearance changes |
-| **Boundary Effects** | Circular convolution assumptions in correlation filters introduce artificial boundary artifacts, requiring separate scale pyramids that increase computational cost |
-| **Occlusion Sensitivity** | Shallow representations fail to capture semantic information needed to distinguish targets from background clutter under heavy occlusion or severe deformation |
+| **Weak Representation**       | Handcrafted features (HOG, LBP, Color Names) require extensive domain expertise and generalize poorly across diverse object categories and conditions |
+| **Model Drift**               | Online classifiers with fixed learning rates and limited temporal memory accumulate errors during prolonged occlusions or rapid appearance changes |
+| **Boundary Effects**          | Circular convolution assumptions in correlation filters introduce artificial boundary artifacts, requiring separate scale pyramids that increase computational cost |
+| **Occlusion Sensitivity**     | Shallow representations fail to capture semantic information needed to distinguish targets from background clutter under heavy occlusion or severe deformation |
 | **Limited Detection Quality** | Sliding window detection approaches provide significantly lower accuracy than modern deep detectors, creating a performance ceiling for the full tracking pipeline |
 
 ---
