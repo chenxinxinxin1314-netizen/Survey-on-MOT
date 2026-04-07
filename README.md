@@ -66,8 +66,8 @@
 |------|--------|-------|------------|------|
 | 1960 | Kalman&nbsp;Filter | Journal of Basic Engineering  | Recursive Bayesian estimation under Gaussian noise and linear dynamics; foundational motion prediction component in modern trackers | [Paper](https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706) |
 | 2002 | Particle&nbsp;Filter| IEEE Trans. Signal Processing | Sequential Monte Carlo sampling; handles nonlinear motion and non-Gaussian noise via weighted particle representation | [Paper](https://ieeexplore.ieee.org/document/978374) |
-| 2003 | Mean&nbsp;Shift     | IEEE TPAMI                    | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1197078) |
-| 2004 | SVM&nbsp;Tracker | IEEE TPAMI | Margin-maximizing SVM decision boundary; strong theoretical generalization but quadratic support vector growth limits real-time use | [Paper](https://ieeexplore.ieee.org/document/1315094) |
+| 2003 | Mean&nbsp;Shift     | IEEE TPAMI                    | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1195991) |
+| 2004 | SVM&nbsp;Tracker | IEEE TPAMI | Margin-maximizing SVM decision boundary; strong theoretical generalization but quadratic support vector growth limits real-time use | [Paper](https://ieeexplore.ieee.org/document/1307012) |
 | 2009 | MILTrack    | CVPR       | Multiple Instance Learning replaces hard binary labels with bag-level supervision, substantially reducing model drift | [Paper](https://ieeexplore.ieee.org/document/5206737) |
 | 2015 | Struck      | IEEE TPAMI | Structured output prediction over kernelized SVM; directly optimizes bounding-box loss, eliminating error-prone intermediate binary labeling | [Paper](https://ieeexplore.ieee.org/document/7360205) |
 | 2010 | MOSSE | CVPR | First correlation filter tracker; learns filters in Fourier domain via FFT for real-time performance | [Paper](https://ieeexplore.ieee.org/document/5539960) |
