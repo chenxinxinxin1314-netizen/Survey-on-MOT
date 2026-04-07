@@ -82,7 +82,7 @@
 |------|---------|-------|------|------------|------|
 | 2002 | LBP         | IEEE TPAMI | Texture            | Binary pixel comparison encoding; invariant to monotonic illumination changes with low computational cost | [Paper](https://ieeexplore.ieee.org/document/1017623) |
 | 2005 | HOG         | CVPR       | Shape / Gradient   | Local edge and gradient orientation histograms; highly discriminative for pedestrian silhouette boundaries | [Paper](https://ieeexplore.ieee.org/document/1467360) |
-| 2009 | Color Names | IEEE TIP   | Color / Appearance | Probabilistic mapping from RGB to linguistic color terms; robust to illumination variation | [Paper](https://ieeexplore.ieee.org/document/4774359) |
+| 2009 | Color Names | IEEE TIP   | Color / Appearance | Probabilistic mapping from RGB to linguistic color terms; robust to illumination variation | [Paper](https://ieeexplore.ieee.org/document/4982667) |
 
 ---
 
