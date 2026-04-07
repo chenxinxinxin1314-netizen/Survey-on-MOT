@@ -58,12 +58,9 @@
 ---
 
 ## Methods
-
 ### Traditional Object Tracking Methods
-
 #### Generative Methods
-
-> 通过对目标外观建模来定位目标，如均值漂移、粒子滤波等。  
+ 
 > Model target appearance to locate objects (e.g., Mean Shift, Particle Filter).
 
 | Year | Method | Venue | Highlights | Link |
@@ -72,12 +69,10 @@
 | 2002 | Particle Filter | IEEE Trans. Signal Processing | Sequential Monte Carlo sampling; handles nonlinear motion and non-Gaussian noise via weighted particle representation | [Paper](https://ieeexplore.ieee.org/document/978374) |
 | 2003 | Mean Shift | IEEE TPAMI | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1197078) |
 
-
 ---
 
 #### Discriminative Methods
-
-> 将追踪转化为前景/背景二分类问题，在线更新分类器。  
+  
 > Treat tracking as foreground/background classification with online classifier updates.
 
 | Year | Method | Venue | Highlights | Link |
@@ -89,8 +84,7 @@
 ---
 
 #### Correlation Filter Tracking
-
-> 利用循环矩阵和傅里叶变换高效计算目标响应图。  
+  
 > Efficient target response map computation via circulant matrices and Fourier transform.
 
 | Year | Method | Venue | Highlights | Link |
@@ -100,12 +94,10 @@
 | 2017 | ECO | CVPR | Factorized convolution operators + compact sample representation; significantly reduces model complexity and computational overhead | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
 | 2017 | CSR-DCF | CVPR | Spatial reliability weights to suppress boundary effects from circular convolution; channel-wise feature selection for robustness | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
 
-
 ---
 
 #### Handcrafted Features
-
-> 依赖 HOG、LBP、颜色直方图等人工设计特征。  
+  
 > Rely on manually engineered features such as HOG, LBP, and color histograms.
 
 | Year | Feature | Venue | Type | Highlights | Link |
@@ -125,6 +117,7 @@
 | **Boundary Effects** | Circular convolution assumptions in correlation filters introduce artificial boundary artifacts, requiring separate scale pyramids that increase computational cost |
 | **Occlusion Sensitivity** | Shallow representations fail to capture semantic information needed to distinguish targets from background clutter under heavy occlusion or severe deformation |
 | **Limited Detection Quality** | Sliding window detection approaches provide significantly lower accuracy than modern deep detectors, creating a performance ceiling for the full tracking pipeline |
+
 ---
 
 ### Deep Learning-based MOT
