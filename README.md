@@ -84,9 +84,7 @@
 
 ---
 <!--
-
 #### Limitations of Traditional Methods
-
 | Limitation | Description |
 |------------|-------------|
 | **Weak Representation**       | Handcrafted features (HOG, LBP, Color Names) require extensive domain expertise and generalize poorly across diverse object categories and conditions |
@@ -94,9 +92,7 @@
 | **Boundary Effects**          | Circular convolution assumptions in correlation filters introduce artificial boundary artifacts, requiring separate scale pyramids that increase computational cost |
 | **Occlusion Sensitivity**     | Shallow representations fail to capture semantic information needed to distinguish targets from background clutter under heavy occlusion or severe deformation |
 | **Limited Detection Quality** | Sliding window detection approaches provide significantly lower accuracy than modern deep detectors, creating a performance ceiling for the full tracking pipeline |
-
 ---
-
 -->
 
 ### Joint Detection and Embedding (JDE) Methods
