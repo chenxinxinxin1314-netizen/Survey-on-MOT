@@ -197,6 +197,7 @@
 | MOT17 | 2017 | 行人 | 多视角 | [官网](https://motchallenge.net/data/MOT17/) |
 | MOT20 | 2020 | 行人 | 拥挤场景 | [官网](https://motchallenge.net/data/MOT20/) |
 | DanceTrack | 2022 | 舞蹈人群 | 外观相似目标 | [官网](https://github.com/DanceTrack/DanceTrack) |
+SportsMOT | 2023 | 体育场景 | 运动员（篮球/足球/排球） | [官网](https://deeperaction.github.io/datasets/sportsmot.html)|
 | BDD100K | 2020 | 自动驾驶 | 多类目标 | [官网](https://www.bdd100k.com/) |
 
 ---
