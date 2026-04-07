@@ -14,7 +14,6 @@
 
 - [Datasets](#datasets)
 - [Metrics](#metrics)
-- [Benchmarks](#benchmarks)
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [Generative Methods](#generative-methods)
@@ -55,19 +54,6 @@
 | ML | Mostly Lost | — | Percentage of ground truth trajectories covered for less than 20% of their lifespan |
 | IDs | Identity Switches | — | Total number of times a tracked identity incorrectly changes during tracking |
 | FPS | Frames Per Second | — | Inference speed; reflects the real-time applicability of the tracker |
-
----
-
-## Benchmarks
-
-### MOT17 (Private Detector)
-
-| 排名 | 方法 | HOTA | MOTA | IDF1 | FPS |
-|------|------|------|------|------|-----|
-| 1 | ... | ... | ... | ... | ... |
-| 2 | ... | ... | ... | ... | ... |
-
-> 数据来源：[MOTChallenge](https://motchallenge.net/)
 
 ---
 
