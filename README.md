@@ -59,49 +59,21 @@
 
 ## Methods
 ### Traditional Object Tracking Methods
-#### Generative Methods
- 
-> Model target appearance to locate objects (e.g., Mean Shift, Particle Filter).
+
+
 
 | Year | Method | Venue | Highlights | Link |
 |------|--------|-------|------------|------|
 | 1960 | Kalman&nbsp;Filter | Journal of Basic Engineering  | Recursive Bayesian estimation under Gaussian noise and linear dynamics; foundational motion prediction component in modern trackers | [Paper](https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706) |
 | 2002 | Particle&nbsp;Filter| IEEE Trans. Signal Processing | Sequential Monte Carlo sampling; handles nonlinear motion and non-Gaussian noise via weighted particle representation | [Paper](https://ieeexplore.ieee.org/document/978374) |
 | 2003 | Mean&nbsp;Shift     | IEEE TPAMI                    | Iterative mode-seeking in color histogram feature space; efficient gradient-free optimization for appearance-based localization | [Paper](https://ieeexplore.ieee.org/document/1197078) |
-
----
-
-#### Discriminative Methods
-  
-> Treat tracking as foreground/background classification with online classifier updates.
-
-| Year | Method | Venue | Highlights | Link |
-|------|--------|-------|------------|------|
 | 2004 | SVM&nbsp;Tracker | IEEE TPAMI | Margin-maximizing SVM decision boundary; strong theoretical generalization but quadratic support vector growth limits real-time use | [Paper](https://ieeexplore.ieee.org/document/1315094) |
 | 2009 | MILTrack    | CVPR       | Multiple Instance Learning replaces hard binary labels with bag-level supervision, substantially reducing model drift | [Paper](https://ieeexplore.ieee.org/document/5206737) |
 | 2015 | Struck      | IEEE TPAMI | Structured output prediction over kernelized SVM; directly optimizes bounding-box loss, eliminating error-prone intermediate binary labeling | [Paper](https://ieeexplore.ieee.org/document/7360205) |
-
----
-
-#### Correlation Filter Tracking
-  
-> Efficient target response map computation via circulant matrices and Fourier transform.
-
-| Year | Method | Venue | Highlights | Link |
-|------|--------|-------|------------|------|
 | 2010 | MOSSE | CVPR | First correlation filter tracker; learns filters in Fourier domain via FFT for real-time performance | [Paper](https://ieeexplore.ieee.org/document/5539960) |
 | 2014 | KCF   | IEEE TPAMI | Kernel trick + multi-channel HOG features; circulant matrix formulation reduces ridge regression complexity from cubic to log-linear | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
 | 2017 | ECO   | CVPR | Factorized convolution operators + compact sample representation; significantly reduces model complexity and computational overhead | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
 | 2017 | CSR‑DCF | CVPR | Spatial reliability weights to suppress boundary effects from circular convolution; channel-wise feature selection for robustness | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
-
----
-
-#### Handcrafted Features
-  
-> Rely on manually engineered features such as HOG, LBP, and color histograms.
-
-| Year | Feature | Venue | Type | Highlights | Link |
-|------|---------|-------|------|------------|------|
 | 2002 | LBP         | IEEE TPAMI | Texture            | Binary pixel comparison encoding; invariant to monotonic illumination changes with low computational cost | [Paper](https://ieeexplore.ieee.org/document/1017623) |
 | 2005 | HOG         | CVPR       | Shape / Gradient   | Local edge and gradient orientation histograms; highly discriminative for pedestrian silhouette boundaries | [Paper](https://ieeexplore.ieee.org/document/1467360) |
 | 2009 | Color Names | IEEE TIP   | Color / Appearance | Probabilistic mapping from RGB to linguistic color terms; robust to illumination variation | [Paper](https://ieeexplore.ieee.org/document/4774359) |
