@@ -92,7 +92,7 @@
 | 2010 | MOSSE | CVPR | First correlation filter tracker; learns filters in Fourier domain via FFT for real-time performance | [Paper](https://ieeexplore.ieee.org/document/5539960) |
 | 2014 | KCF   | IEEE TPAMI | Kernel trick + multi-channel HOG features; circulant matrix formulation reduces ridge regression complexity from cubic to log-linear | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
 | 2017 | ECO   | CVPR | Factorized convolution operators + compact sample representation; significantly reduces model complexity and computational overhead | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
-| 2017 | CSR-DCF | CVPR | Spatial reliability weights to suppress boundary effects from circular convolution; channel-wise feature selection for robustness | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
+| 2017 | CSR‑DCF | CVPR | Spatial reliability weights to suppress boundary effects from circular convolution; channel-wise feature selection for robustness | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
 
 ---
 
