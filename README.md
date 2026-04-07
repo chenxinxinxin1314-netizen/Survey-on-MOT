@@ -12,6 +12,9 @@
 
 ## 📖 Contents
 
+- [Datasets](#datasets)
+- [Metrics](#metrics)
+- [Benchmarks](#benchmarks)
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [Generative Methods](#generative-methods)
@@ -24,13 +27,48 @@
     - [Joint Detection and Embedding](#joint-detection-and-embedding)
     - [Graph-based Association](#graph-based-association)
     - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
-- [Datasets](#datasets)
-- [Metrics](#metrics)
-- [Benchmarks](#benchmarks)
 - [Citation](#citation)
 
 ---
+## Datasets
+| 数据集 | 年份 | 场景 | 目标类型 | 链接 |
+|--------|------|------|----------|------|
+| MOT15 | 2015 | 行人 | 室内/室外 | [官网](https://motchallenge.net/data/MOT15/) |
+| MOT16 | 2016 | 行人 | 街道 | [官网](https://motchallenge.net/data/MOT16/) |
+| MOT17 | 2017 | 行人 | 多视角 | [官网](https://motchallenge.net/data/MOT17/) |
+| MOT20 | 2020 | 行人 | 拥挤场景 | [官网](https://motchallenge.net/data/MOT20/) |
+| DanceTrack | 2022 | 舞蹈人群 | 外观相似目标 | [官网](https://github.com/DanceTrack/DanceTrack) |
+SportsMOT | 2023 | 体育场景 | 运动员（篮球/足球/排球） | [官网](https://deeperaction.github.io/datasets/sportsmot.html)|
+| BDD100K | 2020 | 自动驾驶 | 多类目标 | [官网](https://www.bdd100k.com/) |
 
+---
+
+## Metrics
+
+| 指标 | 全称 | 说明 |
+|------|------|------|
+| MOTA | Multiple Object Tracking Accuracy | 综合漏检、误检和 ID 切换 |
+| IDF1 | ID F1 Score | 衡量 ID 一致性 |
+| HOTA | Higher Order Tracking Accuracy | 兼顾检测与关联的综合指标 |
+| MT | Mostly Tracked | 追踪帧数 > 80% 的轨迹比例 |
+| ML | Mostly Lost | 追踪帧数 < 20% 的轨迹比例 |
+| IDs | ID Switches | ID 切换次数 |
+| FPS | Frames Per Second | 推理速度 |
+
+---
+
+## Benchmarks
+
+### MOT17 (Private Detector)
+
+| 排名 | 方法 | HOTA | MOTA | IDF1 | FPS |
+|------|------|------|------|------|-----|
+| 1 | ... | ... | ... | ... | ... |
+| 2 | ... | ... | ... | ... | ... |
+
+> 数据来源：[MOTChallenge](https://motchallenge.net/)
+
+---
 
 ## Methods
 
@@ -189,45 +227,6 @@
 
 ---
 
-## Datasets
-| 数据集 | 年份 | 场景 | 目标类型 | 链接 |
-|--------|------|------|----------|------|
-| MOT15 | 2015 | 行人 | 室内/室外 | [官网](https://motchallenge.net/data/MOT15/) |
-| MOT16 | 2016 | 行人 | 街道 | [官网](https://motchallenge.net/data/MOT16/) |
-| MOT17 | 2017 | 行人 | 多视角 | [官网](https://motchallenge.net/data/MOT17/) |
-| MOT20 | 2020 | 行人 | 拥挤场景 | [官网](https://motchallenge.net/data/MOT20/) |
-| DanceTrack | 2022 | 舞蹈人群 | 外观相似目标 | [官网](https://github.com/DanceTrack/DanceTrack) |
-SportsMOT | 2023 | 体育场景 | 运动员（篮球/足球/排球） | [官网](https://deeperaction.github.io/datasets/sportsmot.html)|
-| BDD100K | 2020 | 自动驾驶 | 多类目标 | [官网](https://www.bdd100k.com/) |
-
----
-
-## Metrics
-
-| 指标 | 全称 | 说明 |
-|------|------|------|
-| MOTA | Multiple Object Tracking Accuracy | 综合漏检、误检和 ID 切换 |
-| IDF1 | ID F1 Score | 衡量 ID 一致性 |
-| HOTA | Higher Order Tracking Accuracy | 兼顾检测与关联的综合指标 |
-| MT | Mostly Tracked | 追踪帧数 > 80% 的轨迹比例 |
-| ML | Mostly Lost | 追踪帧数 < 20% 的轨迹比例 |
-| IDs | ID Switches | ID 切换次数 |
-| FPS | Frames Per Second | 推理速度 |
-
----
-
-## Benchmarks
-
-### MOT17 (Private Detector)
-
-| 排名 | 方法 | HOTA | MOTA | IDF1 | FPS |
-|------|------|------|------|------|-----|
-| 1 | ... | ... | ... | ... | ... |
-| 2 | ... | ... | ... | ... | ... |
-
-> 数据来源：[MOTChallenge](https://motchallenge.net/)
-
----
 
 ## Citation
 
