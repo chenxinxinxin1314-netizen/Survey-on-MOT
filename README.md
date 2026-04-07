@@ -12,7 +12,6 @@
 
 ## 📖 Contents
 
-- [Introduction](#introduction)
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [Generative Methods](#generative-methods)
@@ -29,14 +28,6 @@
 - [Metrics](#metrics)
 - [Benchmarks](#benchmarks)
 - [Citation](#citation)
-
----
-
-## Introduction
-
-本仓库整理了多目标追踪（MOT）领域的重要论文、数据集和评估方法，涵盖从传统方法到基于深度学习、Transformer 的最新进展。
-
-Multi-Object Tracking (MOT) aims to detect and associate multiple objects across video frames. This repo provides a curated list of papers, datasets, and tools for researchers in this field.
 
 ---
 
@@ -199,15 +190,14 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 ---
 
 ## Datasets
-
 | 数据集 | 年份 | 场景 | 目标类型 | 链接 |
 |--------|------|------|----------|------|
-| MOT15 | 2015 | 行人 | 室内/室外 | [官网](链接) |
-| MOT16 | 2016 | 行人 | 街道 | [官网](链接) |
-| MOT17 | 2017 | 行人 | 多视角 | [官网](链接) |
-| MOT20 | 2020 | 行人 | 拥挤场景 | [官网](链接) |
-| DanceTrack | 2022 | 舞蹈人群 | 外观相似目标 | [官网](链接) |
-| BDD100K | 2020 | 自动驾驶 | 多类目标 | [官网](链接) |
+| MOT15 | 2015 | 行人 | 室内/室外 | [官网](https://motchallenge.net/data/MOT15/) |
+| MOT16 | 2016 | 行人 | 街道 | [官网](https://motchallenge.net/data/MOT16/) |
+| MOT17 | 2017 | 行人 | 多视角 | [官网](https://motchallenge.net/data/MOT17/) |
+| MOT20 | 2020 | 行人 | 拥挤场景 | [官网](https://motchallenge.net/data/MOT20/) |
+| DanceTrack | 2022 | 舞蹈人群 | 外观相似目标 | [官网](https://github.com/DanceTrack/DanceTrack) |
+| BDD100K | 2020 | 自动驾驶 | 多类目标 | [官网](https://www.bdd100k.com/) |
 
 ---
 
