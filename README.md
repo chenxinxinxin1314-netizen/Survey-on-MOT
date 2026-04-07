@@ -12,10 +12,9 @@
 
 ## 📖 Contents
 
-- [简介 Introduction](#简介-introduction)
-- [综述论文 Survey Papers](#综述论文-survey-papers)
-- [方法分类 Methods](#方法分类-methods)
-  - [传统目标追踪方法 Traditional Object Tracking Methods](#传统目标追踪方法-traditional-object-tracking-methods)
+- [Introduction](#introduction)
+- [Methods](#methods)
+  - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [生成式方法 Generative Methods](#生成式方法-generative-methods)
     - [判别式方法 Discriminative Methods](#判别式方法-discriminative-methods)
     - [相关滤波追踪 Correlation Filter Tracking](#相关滤波追踪-correlation-filter-tracking)
@@ -33,7 +32,7 @@
 
 ---
 
-## 简介 Introduction
+## Introduction
 
 本仓库整理了多目标追踪（MOT）领域的重要论文、数据集和评估方法，涵盖从传统方法到基于深度学习、Transformer 的最新进展。
 
@@ -41,18 +40,10 @@ Multi-Object Tracking (MOT) aims to detect and associate multiple objects across
 
 ---
 
-## 综述论文 Survey Papers
 
-| 年份 | 标题 | 来源 | 链接 |
-|------|------|------|------|
-| 2023 | Multiple Object Tracking: A Literature Review | TPAMI | [Paper](https://arxiv.org/abs/xxxx) |
-| 2022 | ... | ... | ... |
+## Methods
 
----
-
-## 方法分类 Methods
-
-### 传统目标追踪方法 Traditional Object Tracking Methods
+### Traditional Object Tracking Methods
 
 #### 生成式方法 Generative Methods
 
