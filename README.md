@@ -90,7 +90,7 @@
 
 > Unify detection and re-identification within a single forward pass, trading sequential-pipeline redundancy for inter-task optimization tension.
 
-| Year | Method | Venue | Titlw | Link |
+| Year | Method | Venue | Title | Link |
 |------|--------|-------|------------|------|
 | 2020 | JDE         | ECCV    | Towards Real-Time Multi-Object Tracking | [Paper](https://arxiv.org/abs/1909.12605) |
 | 2020 | CTracker    | ECCV    | Chained-Tracker: Chaining Paired Attentive Regression Results for End-to-End Joint Multiple-Object Detection and Tracking | [Paper](https://arxiv.org/abs/2007.14557) |
@@ -111,21 +111,21 @@
 ### Graph-based Association Methods
 > Cast data association as relational reasoning over a graph of detections and tracklets, where message passing or structured matching replaces hand-crafted pairwise cost matrices with learned, globally aware assignment.
 
-| Year | Method | Venue | Highlights | Link |
+| Year | Method | Venue | Title | Link |
 |------|--------|-------|------------|------|
-| 2018 | GAT          | ICLR  | Foundational graph attention mechanism that lets nodes attend over neighbours with learned importance weights, later adopted as the backbone of many MOT association modules | [Paper](https://arxiv.org/abs/1710.10903) |
-| 2019 | EDA_GNN      | arXiv | Reformulates frame-by-frame association as maximum weighted bipartite matching solved by a GNN optimisation module, with a multi-level matrix loss enabling affinity learning and matching to co-adapt during training | [Paper](https://arxiv.org/abs/1907.05315) |
-| 2020 | MPNTracker   | CVPR  | Casts association as edge classification over a temporal graph; node features are refined through iterative time-aware message passing, and learned edge correspondence replaces hand-crafted cost matrices | [Paper](https://arxiv.org/abs/1912.07515) |
-| 2020 | GNMOT        | WACV  | Designs separate appearance and motion graph networks to capture appearance and motion similarity respectively, with a carefully designed updating mechanism for nodes, edges, and the global graph variable | [Paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Graph_Networks_for_Multiple_Object_Tracking_WACV_2020_paper.pdf) |
-| 2020 | TPAGT        | arXiv | Predicts tracklet positions via sparse optical flow and re-extracts features at predicted locations to preserve temporal alignment, before an adaptive GNN fuses spatial, appearance, and historical cues into association scores | [Paper](https://arxiv.org/abs/2010.09015) |
-| 2021 | GMTracker    | CVPR  | Integrates graph partitioning with deep feature learning in a fully differentiable framework, jointly optimising representation and matching objective to overcome the suboptimality of greedy local matching | [Paper](https://arxiv.org/abs/2103.16178) |
-| 2021 | TrackMPNN    | arXiv | Extends message-passing association to the online setting via dynamic undirected graphs over multiple timesteps, allowing incremental revision of previous assignments as new detections arrive | [Paper](https://arxiv.org/abs/2101.04206) |
-| 2021 | GSDT         | ICRA  | Models spatial correlations among candidate objects as a graph in which convolutions propagate relational context between tracklet features and current-frame detections, jointly learning detection and tracking end-to-end | [Paper](https://arxiv.org/abs/2006.13164) |
-| 2021 | CorrTracker  | CVPR  | Embeds motion evidence directly into appearance representations through explicit cross-frame correlation maps that encode each object's spatial displacement distribution, removing the need for a separate motion estimator | [Paper](https://arxiv.org/abs/2104.03541) |
-| 2022 | LPT          | CVPR  | Replaces manually designed affinity matrices with a learned global objective that maps trajectory structures to assignment costs, accommodating scene-specific association patterns inaccessible to fixed formulations | [Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Learning_of_Global_Objective_for_Network_Flow_in_Multi-Object_Tracking_CVPR_2022_paper.pdf) |
-| 2023 | TransMOT     | WACV  | Combines a spatial graph over co-occurring intra-frame objects with a temporal transformer that aggregates structured representations across frames, enabling joint reasoning about co-presence and configuration evolution | [Paper](https://arxiv.org/abs/2104.00194) |
-| 2023 | MotionTrack  | CVPR  | Jointly learns short-term displacement features that capture frame-to-frame velocity and long-term trajectory patterns that sustain identity across occlusion gaps, the two scales being complementary by design | [Paper](https://arxiv.org/abs/2303.10404) |
-| 2023 | TrackFlow    | ICCV  | Models the conditional joint distribution of heterogeneous cues — motion, appearance, and depth — via normalising flows, yielding a unified likelihood score that obviates manual hyperparameter balancing across cost terms | [Paper](https://arxiv.org/abs/2308.11513) |
+| 2018 | GAT          | ICLR  | Graph Attention Networks | [Paper](https://arxiv.org/abs/1710.10903) |
+| 2019 | EDA_GNN      | arXiv | Graph Neural Based End-to-end Data Association Framework for Online Multiple-Object Tracking | [Paper](https://arxiv.org/abs/1907.05315) |
+| 2020 | MPNTracker   | CVPR  | Learning a Neural Solver for Multiple Object Tracking | [Paper](https://arxiv.org/abs/1912.07515) |
+| 2020 | GNMOT        | WACV  |   | [Paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Graph_Networks_for_Multiple_Object_Tracking_WACV_2020_paper.pdf) |
+| 2020 | TPAGT        | arXiv | Tracklets Predicting Based Adaptive Graph Tracking | [Paper](https://arxiv.org/abs/2010.09015) |
+| 2021 | GMTracker    | CVPR  | Learnable Graph Matching: Incorporating Graph Partitioning with Deep Feature Learning for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2103.16178) |
+| 2021 | TrackMPNN    | arXiv | TrackMPNN: A Message Passing Graph Neural Architecture for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2101.04206) |
+| 2021 | GSDT         | ICRA  | Joint Object Detection and Multi-Object Tracking with Graph Neural Networks | [Paper](https://arxiv.org/abs/2006.13164) |
+| 2021 | CorrTracker  | CVPR  | Multiple Object Tracking with Correlation Learning | [Paper](https://arxiv.org/abs/2104.03541) |
+| 2022 | LPT          | CVPR  | Learning of Global Objective for Network Flow in Multi-Object Tracking | [Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Learning_of_Global_Objective_for_Network_Flow_in_Multi-Object_Tracking_CVPR_2022_paper.pdf) |
+| 2023 | TransMOT     | WACV  | TransMOT: Spatial-Temporal Graph Transformer for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2104.00194) |
+| 2023 | MotionTrack  | CVPR  | MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2303.10404) |
+| 2023 | TrackFlow    | ICCV  | TrackFlow: Multi-Object Tracking with Normalizing Flows | [Paper](https://arxiv.org/abs/2308.11513) |
 
 ---
 ### End-to-End Transformer-based Tracking Methods
