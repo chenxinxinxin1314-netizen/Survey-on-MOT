@@ -111,6 +111,7 @@
 #### Tracking-by-Detection Pipeline
 
 > Separate detection and association stages; association typically uses IoU or ReID features.
+
 | Year | Method | Venue | Category | Title | Link |
 |------|--------|-------|----------|-------|------|
 | 2005 | Siamese Network | CVPR | Appearance | Learning a Similarity Metric Discriminatively, with Application to Face Verification | [Paper](https://ieeexplore.ieee.org/document/1467314) |
@@ -162,6 +163,7 @@
 #### Joint Detection and Embedding
 
 > Unify detection and ReID feature extraction in a single network.
+
 | Year | Method | Venue | Title | Link |
 |------|--------|-------|-------|------|
 | 2020 | UnsupTrack | arXiv | Simple Unsupervised Multi-Object Tracking | [Paper](https://arxiv.org/abs/2006.02609) |
