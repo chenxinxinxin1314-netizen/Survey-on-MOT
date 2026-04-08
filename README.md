@@ -13,9 +13,6 @@
 - [📏 Metrics](#-metrics)
 - [🔬 Methods](#-methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
-    - [Generative Methods](#generative-methods)
-    - [Discriminative Methods](#discriminative-methods)
-    - [Correlation Filter Tracking](#correlation-filter-tracking)
     - [Handcrafted Features](#handcrafted-features)
   - [Deep Learning-based MOT](#deep-learning-based-mot)
     - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
@@ -138,7 +135,6 @@
 | 2023 | GHOST | CVPR | Appearance | Simple Cues Lead to a Strong Multi-Object Tracker | [Paper](https://arxiv.org/abs/2206.04656) |
 | 2024 | UCMCTrack | AAAI | Association | UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation | [Paper](https://arxiv.org/abs/2312.08952) |
 | 2024 | Hybrid-SORT | AAAI | Association | Hybrid-SORT: Weak Cues Matter for Online Multi-Object Tracking | [Paper](https://arxiv.org/abs/2308.00783) |
-
 
 
 
