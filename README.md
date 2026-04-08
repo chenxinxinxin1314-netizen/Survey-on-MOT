@@ -61,32 +61,14 @@
 
 > Classical tracking approaches prior to deep learning, relying on probabilistic models and handcrafted representations.
 
-#### Generative Methods
-
-> Model the target appearance directly using probabilistic or density estimation approaches.
-
 | Year | Method | Venue | Title | Link |
 |------|--------|-------|-------|------|
 | 1960 | Kalman Filter | J. Basic Engineering | A New Approach to Linear Filtering and Prediction Problems | [Paper](https://ieeexplore.ieee.org/abstract/document/5311910) |
 | 2002 | Particle Filter | IEEE Trans. Signal Processing | A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking | [Paper](https://ieeexplore.ieee.org/document/978374) |
 | 2003 | Mean Shift | IEEE TPAMI | Kernel-based object tracking | [Paper](https://ieeexplore.ieee.org/document/1195991) |
-
-#### Discriminative Methods
-
-> Learn a decision boundary between target and background.
-
-| Year | Method | Venue | Title | Link |
-|------|--------|-------|-------|------|
 | 2004 | SVM Tracker | IEEE TPAMI | Support vector tracking | [Paper](https://ieeexplore.ieee.org/document/1307012) |
 | 2009 | MILTrack | CVPR | Visual tracking with online Multiple Instance Learning | [Paper](https://ieeexplore.ieee.org/document/5206737) |
 | 2015 | Struck | IEEE TPAMI | Struck: Structured Output Tracking with Kernels | [Paper](https://ieeexplore.ieee.org/document/7360205) |
-
-#### Correlation Filter Tracking
-
-> Exploit the circular correlation in frequency domain for efficient tracking.
-
-| Year | Method | Venue | Title | Link |
-|------|--------|-------|-------|------|
 | 2010 | MOSSE | CVPR | Visual object tracking using adaptive correlation filters | [Paper](https://ieeexplore.ieee.org/document/5539960) |
 | 2014 | KCF | IEEE TPAMI | High-Speed Tracking with Kernelized Correlation Filters | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
 | 2017 | ECO | CVPR | ECO: Efficient Convolution Operators for Tracking | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
