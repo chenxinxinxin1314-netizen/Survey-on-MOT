@@ -111,19 +111,62 @@
 #### Tracking-by-Detection Pipeline
 
 > Separate detection and association stages; association typically uses IoU or ReID features.
+| Year | Method | Venue | Category | Title | Link |
+|------|--------|-------|----------|-------|------|
+| 2005 | Siamese Network | CVPR | Appearance | Learning a Similarity Metric Discriminatively, with Application to Face Verification | [Paper](https://ieeexplore.ieee.org/document/1467314) |
+| 2015 | Faster R-CNN | NeurIPS | Detection | Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks | [Paper](https://arxiv.org/abs/1506.01497) |
+| 2016 | YOLO | CVPR | Detection | You Only Look Once: Unified, Real-Time Object Detection | [Paper](https://arxiv.org/abs/1506.02640) |
+| 2016 | Social LSTM | CVPR | Motion | Social LSTM: Human Trajectory Prediction in Crowded Spaces | [Paper](https://ieeexplore.ieee.org/document/7780479) |
+| 2016 | Deep SORT | ICIP | Appearance | Simple Online and Realtime Tracking with a Deep Association Metric | [Paper](https://arxiv.org/abs/1703.07402) |
+| 2017 | FPN | CVPR | Detection | Feature Pyramid Networks for Object Detection | [Paper](https://arxiv.org/abs/1612.03144) |
+| 2017 | Triplet Loss | arXiv | Appearance | In Defense of the Triplet Loss for Person Re-Identification | [Paper](https://arxiv.org/abs/1703.07737) |
+| 2017 | Deep Network Flow | CVPR | Association | Deep Network Flow for Multi-Object Tracking | [Paper](https://arxiv.org/abs/1706.08482) |
+| 2017 | MobileNets | arXiv | Detection | MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications | [Paper](https://arxiv.org/abs/1704.04861) |
+| 2018 | Cascade R-CNN | CVPR | Detection | Cascade R-CNN: Delving into High Quality Object Detection | [Paper](https://arxiv.org/abs/1712.00726) |
+| 2018 | SE-Net | CVPR | Detection | Squeeze-and-Excitation Networks | [Paper](https://arxiv.org/abs/1709.01507) |
+| 2018 | Non-local NN | CVPR | Detection | Non-Local Neural Networks | [Paper](https://arxiv.org/abs/1711.07971) |
+| 2018 | Social GAN | CVPR | Motion | Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks | [Paper](https://arxiv.org/abs/1803.10892) |
+| 2018 | PCB | ECCV | Appearance | Beyond Part Models: Person Retrieval with Refined Part Pooling | [Paper](https://arxiv.org/abs/1711.09349) |
+| 2018 | HA-Net | CVPR | Appearance | Harmonious Attention Network for Person Re-Identification | [Paper](https://arxiv.org/abs/1802.08122) |
+| 2018 | SGGNN | ECCV | Appearance | Person Re-Identification with Deep Similarity-Guided Graph Neural Network | [Paper](https://arxiv.org/abs/1807.09975) |
+| 2019 | EfficientNet | ICML | Detection | EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks | [Paper](https://arxiv.org/abs/1905.11946) |
+| 2019 | ABD-Net | ICCV | Appearance | ABD-Net: Attentive but Diverse Person Re-Identification | [Paper](https://arxiv.org/abs/1908.01114) |
+| 2019 | Bag of Tricks | CVPRW | Appearance | Bag of Tricks and a Strong Baseline for Deep Person Re-Identification | [Paper](https://arxiv.org/abs/1903.07071) |
+| 2019 | Social-BiGAT | NeurIPS | Motion | Social-BiGAT: Multimodal Trajectory Forecasting using Bicycle-GAN and Graph Attention Networks | [Paper](https://arxiv.org/abs/1907.03395) |
+| 2020 | DETR | arXiv | Detection | End-to-End Object Detection with Transformers | [Paper](https://arxiv.org/abs/2005.12872) |
+| 2020 | YOLOv4 | arXiv | Detection | YOLOv4: Optimal Speed and Accuracy of Object Detection | [Paper](https://arxiv.org/abs/2004.10934) |
+| 2020 | Lifted DP | ICML | Association | Lifted Disjoint Paths with Application in Multiple Object Tracking | [Paper](https://arxiv.org/abs/2008.09577) |
+| 2021 | Deformable DETR | arXiv | Detection | Deformable DETR: Deformable Transformers for End-to-End Object Detection | [Paper](https://arxiv.org/abs/2010.04159) |
+| 2021 | YOLOX | arXiv | Detection | YOLOX: Exceeding YOLO Series in 2021 | [Paper](https://arxiv.org/abs/2107.08430) |
+| 2021 | QDTrack | arXiv | Appearance | Quasi-Dense Similarity Learning for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2006.06664) |
+| 2021 | FairMOT | IJCV | Appearance | FairMOT: On the Fairness of Detection and Re-Identification in Multiple Object Tracking | [Paper](https://arxiv.org/abs/2004.01888) |
+| 2021 | Multi-track Pooling | CVPR | Appearance | Discriminative Appearance Modeling with Multi-Track Pooling for Real-Time Multi-Object Tracking | [Paper](https://arxiv.org/abs/2101.12875) |
+| 2021 | TransReID | ICCV | Appearance | TransReID: Transformer-Based Object Re-Identification | [Paper](https://arxiv.org/abs/2102.04378) |
+| 2021 | ArTIST | CVPR | Association | Probabilistic Tracklet Scoring and Inpainting for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2012.10077) |
+| 2022 | DINO | arXiv | Detection | DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection | [Paper](https://arxiv.org/abs/2203.03605) |
+| 2022 | ByteTrack | ECCV | Association | ByteTrack: Multi-Object Tracking by Associating Every Detection Box | [Paper](https://arxiv.org/abs/2110.06864) |
+| 2022 | BoT-SORT | arXiv | Association | BoT-SORT: Robust Associations Multi-Pedestrian Tracking | [Paper](https://arxiv.org/abs/2206.14651) |
+| 2022 | MAA | WACV | Association | Modelling Ambiguous Assignments for Multi-Person Tracking in Crowds | [Paper](https://arxiv.org/abs/2201.01049) |
+| 2023 | OC-SORT | CVPR | Association | Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking | [Paper](https://arxiv.org/abs/2203.14360) |
+| 2023 | StrongSORT | TMM | Association | StrongSORT: Make DeepSORT Great Again | [Paper](https://arxiv.org/abs/2202.13514) |
+| 2023 | SGT | WACV | Association | Detection Recovery in Online Multi-Object Tracking with Sparse Graph Tracker | [Paper](https://arxiv.org/abs/2205.00968) |
+| 2023 | ColTrack | ICCV | Association | Collaborative Tracking Learning for Frame-Rate-Insensitive Multi-Object Tracking | [Paper](https://arxiv.org/abs/2308.05911) |
+| 2023 | Deep OC-SORT | ICIP | Appearance | Deep OC-SORT: Multi-Pedestrian Tracking by Adaptive Re-Identification | [Paper](https://arxiv.org/abs/2302.11813) |
+| 2023 | GHOST | CVPR | Appearance | Simple Cues Lead to a Strong Multi-Object Tracker | [Paper](https://arxiv.org/abs/2206.04656) |
+| 2024 | UCMCTrack | AAAI | Association | UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation | [Paper](https://arxiv.org/abs/2312.08952) |
+| 2024 | Hybrid-SORT | AAAI | Association | Hybrid-SORT: Weak Cues Matter for Online Multi-Object Tracking | [Paper](https://arxiv.org/abs/2308.00783) |
 
+
+
+
+#### Joint Detection and Embedding
+
+> Unify detection and ReID feature extraction in a single network.
 | Year | Method | Venue | Title | Link |
 |------|--------|-------|-------|------|
 | 2020 | UnsupTrack | arXiv | Simple Unsupervised Multi-Object Tracking | [Paper](https://arxiv.org/abs/2006.02609) |
 | 2020 | PointTrack | ECCV | Segment as Points for Efficient Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01550) |
 | 2020 | PointTrack++ | arXiv | PointTrack++ for Effective Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01549) |
-
-#### Joint Detection and Embedding
-
-> Unify detection and ReID feature extraction in a single network.
-
-| Year | Method | Venue | Title | Link |
-|------|--------|-------|-------|------|
 | 2020 | JDE | ECCV | Towards Real-Time Multi-Object Tracking | [Paper](https://arxiv.org/abs/1909.12605) |
 | 2020 | CTracker | ECCV | Chained-Tracker: Chaining Paired Attentive Regression Results for End-to-End Joint Multiple-Object Detection and Tracking | [Paper](https://arxiv.org/abs/2007.14557) |
 | 2020 | TubeTK | CVPR | TubeTK: Adopting Tubes to Track Multi-Object in a One-Step Training Model | [Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_TubeTK_Adopting_Tubes_to_Track_Multi-Object_in_a_One-Step_Training_CVPR_2020_paper.pdf) |
