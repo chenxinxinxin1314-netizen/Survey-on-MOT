@@ -90,21 +90,21 @@
 
 > Unify detection and re-identification within a single forward pass, trading sequential-pipeline redundancy for inter-task optimization tension.
 
-| Year | Method | Venue | Highlights | Link |
+| Year | Method | Venue | Titlw | Link |
 |------|--------|-------|------------|------|
-| 2020 | JDE         | ECCV    | First unified framework jointly learning detection and appearance embeddings in one forward pass; establishes the JDE paradigm | [Paper](https://arxiv.org/abs/1909.12605) |
-| 2020 | CTracker    | ECCV    | Recasts detection and association as a unified regression over paired adjacent frames, removing the explicit matching stage | [Paper](https://arxiv.org/abs/2007.14557) |
-| 2020 | TubeTK      | CVPR    | Direct spatiotemporal tube regression as the logical extreme of joint formulation; eliminates frame-level association entirely | [Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_TubeTK_Adopting_Tubes_to_Track_Multi-Object_in_a_One-Step_Training_CVPR_2020_paper.pdf) |
-| 2021 | FairMOT     | IJCV    | Anchor-free detection on high-resolution maps with decoupled heads; identifies anchor–identity misalignment as the root cause of poor JDE ReID quality, and shows compact 64-D embeddings outperform 512-D ones in joint training | [Paper](https://arxiv.org/abs/2004.01888) |
-| 2021 | SiamMOT     | CVPR    | Replaces Kalman-filter motion priors with Siamese template matching for inter-frame displacement estimation | [Paper](https://arxiv.org/abs/2105.11595) |
-| 2021 | TraDeS      | CVPR    | Inverts the detect-then-associate ordering by propagating tracklet features into the current frame via a cost-volume association module | [Paper](https://arxiv.org/abs/2103.08808) |
-| 2021 | TADAM       | CVPR    | Bidirectional synergy in which tracking context sharpens detection responses while detection outputs stabilise association, preserving real-time throughput | [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Online_Multiple_Object_Tracking_With_Cross-Task_Synergy_CVPR_2021_paper.pdf) |
-| 2021 | SOTMOT      | CVPR    | Couples each tracklet with a lightweight single-object tracker to correct coarse detection estimates under occlusion | [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Zheng_Improving_Multiple_Object_Tracking_With_Single_Object_Tracking_CVPR_2021_paper.pdf) |
-| 2022 | CSTrack     | TIP     | Reciprocal self-relation and cross-relation modules convert detection–ReID gradient conflict into cooperative supervision | [Paper](https://arxiv.org/abs/2010.12138) |
-| 2022 | RelationTrack | TMM   | Partitions shared representations into task-specific subspaces and exploits inter-object structure when per-instance appearance is insufficient | [Paper](https://arxiv.org/abs/2105.04322) |
-| 2024 | PASTA       | NeurIPS | Composes lightweight scenario-specific expert modules at inference to counter negative transfer induced by joint training across heterogeneous datasets | [Paper](https://arxiv.org/abs/2411.00553) |
-| 2025 | CrowdTrack  | arXiv   | Empirically shows that in dense pedestrian scenes association gains saturate once detector recall becomes the binding constraint, redirecting optimisation toward detection | [Paper](https://arxiv.org/abs/2507.02479) |
-| 2020 | UnsupTrack  | arXiv   | Generates pseudo-tracklets as surrogate identity supervision, narrowing the gap to fully supervised performance when pseudo-label quality is adequate | [Paper](https://arxiv.org/abs/2006.02609) |
+| 2020 | JDE         | ECCV    | Towards Real-Time Multi-Object Tracking | [Paper](https://arxiv.org/abs/1909.12605) |
+| 2020 | CTracker    | ECCV    | Chained-Tracker: Chaining Paired Attentive Regression Results for End-to-End Joint Multiple-Object Detection and Tracking | [Paper](https://arxiv.org/abs/2007.14557) |
+| 2020 | TubeTK      | CVPR    | TubeTK: Adopting Tubes to Track Multi-Object in a One-Step Training Model | [Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pang_TubeTK_Adopting_Tubes_to_Track_Multi-Object_in_a_One-Step_Training_CVPR_2020_paper.pdf) |
+| 2021 | FairMOT     | IJCV    | FairMOT: On the Fairness of Detection and Re-Identification in Multiple Object Tracking | [Paper](https://arxiv.org/abs/2004.01888) |
+| 2021 | SiamMOT     | CVPR    | SiamMOT: Siamese Multi-Object Tracking | [Paper](https://arxiv.org/abs/2105.11595) |
+| 2021 | TraDeS      | CVPR    | Track to Detect and Segment: An Online Multi-Object Tracker | [Paper](https://arxiv.org/abs/2103.08808) |
+| 2021 | TADAM       | CVPR    | Online Multiple Object Tracking with Cross-Task Synergy | [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Online_Multiple_Object_Tracking_With_Cross-Task_Synergy_CVPR_2021_paper.pdf) |
+| 2021 | SOTMOT      | CVPR    | Improving Multiple Object Tracking with Single Object Tracking | [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Zheng_Improving_Multiple_Object_Tracking_With_Single_Object_Tracking_CVPR_2021_paper.pdf) |
+| 2022 | CSTrack     | TIP     | Rethinking the competition between detection and ReID in Multi-Object Tracking | [Paper](https://arxiv.org/abs/2010.12138) |
+| 2022 | RelationTrack | TMM   | RelationTrack: Relation-aware Multiple Object Tracking with Decoupled Representation | [Paper](https://arxiv.org/abs/2105.04322) |
+| 2024 | PASTA       | NeurIPS | Is Multiple Object Tracking a Matter of Specialization? | [Paper](https://arxiv.org/abs/2411.00553) |
+| 2025 | CrowdTrack  | arXiv   | CrowdTrack: A Benchmark for Difficult Multiple Pedestrian Tracking in Real Scenarios | [Paper](https://arxiv.org/abs/2507.02479) |
+| 2020 | UnsupTrack  | arXiv   | Simple Unsupervised Multi-Object Tracking | [Paper](https://arxiv.org/abs/2006.02609) |
 
 
 ---
