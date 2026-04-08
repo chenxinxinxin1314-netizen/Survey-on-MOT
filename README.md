@@ -58,7 +58,7 @@
 
 > Classical tracking approaches prior to deep learning, relying on probabilistic models and handcrafted representations.
 
-| Year | Method | Venue | Title | Link |
+| Year | Method | Publication | Title | Link |
 |------|--------|-------|-------|------|
 | 1960 | Kalman Filter | J. Basic Engineering | A New Approach to Linear Filtering and Prediction Problems | [Paper](https://ieeexplore.ieee.org/abstract/document/5311910) |
 | 2002 | Particle Filter | IEEE Trans. Signal Processing | A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking | [Paper](https://ieeexplore.ieee.org/document/978374) |
@@ -75,7 +75,7 @@
 
 > Rely on manually engineered features such as HOG, LBP, and color histograms.
 
-| Year | Feature | Venue | Type | Title | Link |
+| Year | Feature | Publication | Type | Title | Link |
 |------|---------|-------|------|-------|------|
 | 2002 | LBP | IEEE TPAMI | Texture | Multiresolution gray-scale and rotation invariant texture classification with local binary patterns | [Paper](https://ieeexplore.ieee.org/document/1017623) |
 | 2005 | HOG | CVPR | Shape / Gradient | Histograms of oriented gradients for human detection | [Paper](https://ieeexplore.ieee.org/document/1467360) |
@@ -91,7 +91,7 @@
 
 > Separate detection and association stages; association typically uses IoU or ReID features.
 
-| Year | Method | Venue | Category | Title | Link |
+| Year | Method | Publication | Category | Title | Link |
 |------|--------|-------|----------|-------|------|
 | 2005 | Siamese Network | CVPR | Appearance | Learning a Similarity Metric Discriminatively, with Application to Face Verification | [Paper](https://ieeexplore.ieee.org/document/1467314) |
 | 2015 | Faster R-CNN | NeurIPS | Detection | Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks | [Paper](https://arxiv.org/abs/1506.01497) |
@@ -142,7 +142,7 @@
 
 > Unify detection and ReID feature extraction in a single network.
 
-| Year | Method | Venue | Title | Link |
+| Year | Method | Publication | Title | Link |
 |------|--------|-------|-------|------|
 | 2020 | UnsupTrack | arXiv | Simple Unsupervised Multi-Object Tracking | [Paper](https://arxiv.org/abs/2006.02609) |
 | 2020 | PointTrack | ECCV | Segment as Points for Efficient Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01550) |
@@ -164,7 +164,7 @@
 
 > Model detections and tracklets as graph nodes; use GNN or attention for association.
 
-| Year | Method | Venue | Title | Link |
+| Year | Method | Publication | Title | Link |
 |------|--------|-------|-------|------|
 | 2018 | GAT | ICLR | Graph Attention Networks | [Paper](https://arxiv.org/abs/1710.10903) |
 | 2019 | EDA_GNN | arXiv | Graph Neural Based End-to-end Data Association Framework for Online Multiple-Object Tracking | [Paper](https://arxiv.org/abs/1907.05315) |
@@ -184,7 +184,7 @@
 
 > Formulate tracking as a sequence-to-sequence problem using Transformer architectures.
 
-| Year | Method | Venue | Title | Link |
+| Year | Method | Publication | Title | Link |
 |------|--------|-------|-------|------|
 | 2021 | TransTrack | arXiv | TransTrack: Multiple Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2012.15460) |
 | 2021 | PermaTrack | ICCV | Learning to Track with Object Permanence | [Paper](https://arxiv.org/abs/2103.14258) |
