@@ -67,7 +67,9 @@
 
 ---
 #### Handcrafted Features
+
 > Rely on manually engineered features such as HOG, LBP, and color histograms.
+
 | Year | Feature | Venue | Type | Title | Link |
 |------|---------|-------|------|------------|------|
 | 2002 | LBP         | IEEE TPAMI | Texture            | Multiresolution gray-scale and rotation invariant texture classification with local binary patterns | [Paper](https://ieeexplore.ieee.org/document/1017623) |
