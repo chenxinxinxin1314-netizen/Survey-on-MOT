@@ -132,26 +132,26 @@
 
 > Cast localisation, identity, and temporal correspondence as a single set-prediction problem trained under a permutation-invariant objective, dissolving the modular boundaries between detection, appearance modelling, and association.
 
-| Year | Method | Venue | Highlights | Link |
+| Year | Method | Venue | Title | Link |
 |------|--------|-------|------------|------|
-| 2020 | PointTrack    | ECCV    | Represents instances as compact point sets that replace per-pixel similarity computation with point-level characteristic matching, reducing computational overhead while preserving association accuracy under complex occlusion | [Paper](https://arxiv.org/abs/2007.01550) |
-| 2020 | PointTrack++  | arXiv   | Extends PointTrack with refinements for online multi-object tracking and segmentation, retaining the point-set representation while improving robustness in dense scenes | [Paper](https://arxiv.org/abs/2007.01549) |
-| 2021 | TransTrack    | arXiv   | Early instantiation of query-based tracking in which cross-attention propagates object features from the preceding frame to current encoder outputs, while final association is still resolved through IoU matching | [Paper](https://arxiv.org/abs/2012.15460) |
-| 2021 | PermaTrack    | ICCV    | Embeds an object-permanence prior through a spatio-temporal ConvGRU that predicts plausible locations for fully occluded targets, sustaining trajectory continuity without re-identification at re-emergence | [Paper](https://arxiv.org/abs/2103.14258) |
-| 2022 | TrackFormer   | CVPR    | Adopts an autoregressive query propagation strategy in which track queries are carried forward across frames and jointly decoded with new detection queries | [Paper](https://arxiv.org/abs/2101.02702) |
-| 2022 | MOTR          | ECCV    | Introduces persistent track queries that each model a single trajectory through frame-by-frame decoder updates, accumulating temporal context via self-attention over historical states and cross-attention with current detections | [Paper](https://arxiv.org/abs/2105.03247) |
-| 2022 | GTR           | CVPR    | Broadens the temporal scope of query propagation by operating over frame sequences rather than pairs, aggregating evidence across all frames simultaneously through trajectory-level queries | [Paper](https://arxiv.org/abs/2203.13250) |
-| 2022 | MeMOT         | CVPR    | Per-object memory module that stores appearance and motion observations over an extended history, queried at each step via transformer attention to counteract representation drift in long sequences | [Paper](https://arxiv.org/abs/2203.16761) |
-| 2022 | TransCenter   | TPAMI   | Dense heatmap queries on high-resolution feature maps recover the recall that sparse DETR-style query sets sacrifice in crowded scenes while retaining global context through attention | [Paper](https://arxiv.org/abs/2103.15145) |
-| 2022 | P3AFormer     | ECCV    | Models each object as a spatial pixel distribution propagated via optical flow, recovering discriminability in densely crowded scenes where overlapping bounding boxes render box-level features ambiguous | [Paper](https://arxiv.org/abs/2207.05518) |
-| 2022 | UTT           | CVPR    | Demonstrates that single-object and multi-object tracking benefit from joint training through a shared transformer backbone, with complementary supervisory signals improving performance on both tasks | [Paper](https://arxiv.org/abs/2203.15175) |
-| 2022 | Unicorn       | ECCV    | Extends task unification to four tracking-related problems within a single model, with successful cross-task transfer suggesting that their representational requirements are more closely aligned than traditional separate treatments assume | [Paper](https://arxiv.org/abs/2207.07078) |
-| 2023 | MeMOTR        | ICCV    | Integrates long-term memory within an end-to-end architecture by appending a memory bank to track queries, ensuring that features from arbitrarily distant frames remain accessible during cross-attention with current detections | [Paper](https://arxiv.org/abs/2307.15700) |
-| 2024 | MASA          | CVPR    | Leverages zero-shot segmentation to decouple correspondence from category-specific training, enabling tracking of arbitrary object classes without per-category supervision | [Paper](https://arxiv.org/abs/2406.04221) |
-| 2024 | GeneralTrack  | CVPR    | Identifies the architectural and training conditions under which cross-domain transfer becomes achievable, advancing tracking generalisation beyond fixed scene and category distributions | [Paper](https://arxiv.org/abs/2406.00429) |
-| 2024 | SambaMOTR     | arXiv   | Replaces the transformer decoder with a Mamba state-space model that processes each tracklet sequence at linear time complexity, while cross-sequence attention synchronises hidden states across co-occurring objects | [Paper](https://arxiv.org/abs/2410.01806) |
-| 2025 | CO-MOT        | ICLR    | Coopetition label assignment that includes tracked objects in the matching targets for detection queries during intermediate decoder layers, complemented by shadow query copies that enforce discriminative representations via one-to-set optimisation | [Paper](https://arxiv.org/abs/2305.12724) |
-| 2025 | MOTIP         | CVPR    | Departs from matching-based formulations by predicting each detection's identity index directly from its query representation, collapsing detection and association into a single classification head that admits true end-to-end optimisation | [Paper](https://arxiv.org/abs/2403.16848) |
+| 2020 | PointTrack    | ECCV    | Segment as Points for Efficient Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01550) |
+| 2020 | PointTrack++  | arXiv   | PointTrack++ for Effective Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01549) |
+| 2021 | TransTrack    | arXiv   | TransTrack: Multiple Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2012.15460) |
+| 2021 | PermaTrack    | ICCV    | Learning to Track with Object Permanence | [Paper](https://arxiv.org/abs/2103.14258) |
+| 2022 | TrackFormer   | CVPR    | TrackFormer: Multi-Object Tracking with Transformers | [Paper](https://arxiv.org/abs/2101.02702) |
+| 2022 | MOTR          | ECCV    | MOTR: End-to-End Multiple-Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2105.03247) |
+| 2022 | GTR           | CVPR    | Global Tracking Transformers | [Paper](https://arxiv.org/abs/2203.13250) |
+| 2022 | MeMOT         | CVPR    | MeMOT: Multi-Object Tracking with Memory | [Paper](https://arxiv.org/abs/2203.16761) |
+| 2022 | TransCenter   | TPAMI   | TransCenter: Transformers with Dense Representations for Multiple-Object Tracking | [Paper](https://arxiv.org/abs/2103.15145) |
+| 2022 | P3AFormer     | ECCV    | Tracking Objects as Pixel-wise Distributions | [Paper](https://arxiv.org/abs/2207.05518) |
+| 2022 | UTT           | CVPR    | Unified Transformer Tracker for Object Tracking | [Paper](https://arxiv.org/abs/2203.15175) |
+| 2022 | Unicorn       | ECCV    | Towards Grand Unification of Object Tracking | [Paper](https://arxiv.org/abs/2207.07078) |
+| 2023 | MeMOTR        | ICCV    | MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2307.15700) |
+| 2024 | MASA          | CVPR    | Matching Anything by Segmenting Anything | [Paper](https://arxiv.org/abs/2406.04221) |
+| 2024 | GeneralTrack  | CVPR    | Towards Generalizable Multi-Object Tracking | [Paper](https://arxiv.org/abs/2406.00429) |
+| 2024 | SambaMOTR     | arXiv   | Samba: Synchronized Set-of-Sequences Modeling for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2410.01806) |
+| 2025 | CO-MOT        | ICLR    | Bridging the Gap Between End-to-end and Non-End-to-end Multi-Object Tracking | [Paper](https://arxiv.org/abs/2305.12724) |
+| 2025 | MOTIP         | CVPR    | Multiple Object Tracking as ID Prediction | [Paper](https://arxiv.org/abs/2403.16848) |
 
 ---
 
