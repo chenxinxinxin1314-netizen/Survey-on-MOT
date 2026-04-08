@@ -1,4 +1,4 @@
-# 🎯 Awesome Multi-Object Tracking (MOT) Survey
+# 🎯 Multi-Object Tracking: From Classical Filters to End-to-End Transformers
 
 > A comprehensive survey of Multi-Object Tracking (MOT) methods, datasets, and benchmarks.
 
