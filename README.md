@@ -98,7 +98,7 @@
 | 2018 | GAT          | ICLR  | Graph Attention Networks | [Paper](https://arxiv.org/abs/1710.10903) |
 | 2019 | EDA_GNN      | arXiv | Graph Neural Based End-to-end Data Association Framework for Online Multiple-Object Tracking | [Paper](https://arxiv.org/abs/1907.05315) |
 | 2020 | MPNTracker   | CVPR  | Learning a Neural Solver for Multiple Object Tracking | [Paper](https://arxiv.org/abs/1912.07515) |
-| 2020 | GNMOT        | WACV  |   | [Paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Graph_Networks_for_Multiple_Object_Tracking_WACV_2020_paper.pdf) |
+| 2020 | GNMOT        | WACV  | Graph Networks for Multiple Object Tracking | [Paper](https://openaccess.thecvf.com/content_WACV_2020/papers/Li_Graph_Networks_for_Multiple_Object_Tracking_WACV_2020_paper.pdf) |
 | 2020 | TPAGT        | arXiv | Tracklets Predicting Based Adaptive Graph Tracking | [Paper](https://arxiv.org/abs/2010.09015) |
 | 2021 | GMTracker    | CVPR  | Learnable Graph Matching: Incorporating Graph Partitioning with Deep Feature Learning for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2103.16178) |
 | 2021 | TrackMPNN    | arXiv | TrackMPNN: A Message Passing Graph Neural Architecture for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2101.04206) |
