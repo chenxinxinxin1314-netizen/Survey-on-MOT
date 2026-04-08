@@ -16,13 +16,8 @@
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [Handcrafted Features](#handcrafted-features)
-    - [Limitations of Traditional Methods](#limitations-of-traditional-methods)
   - [Deep Learning-based MOT](#deep-learning-based-mot)
-    - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
-    - [Joint Detection and Embedding](#joint-detection-and-embedding)
-    - [Graph-based Association](#graph-based-association)
-    - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
-- [Citation](#citation)
+   - [Citation](#citation)
 
 ---
 ## Datasets
