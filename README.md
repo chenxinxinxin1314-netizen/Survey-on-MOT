@@ -15,9 +15,6 @@
 - [Metrics](#metrics)
 - [Methods](#methods)
   - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
-    - [Generative Methods](#generative-methods)
-    - [Discriminative Methods](#discriminative-methods)
-    - [Correlation Filter Tracking](#correlation-filter-tracking)
     - [Handcrafted Features](#handcrafted-features)
     - [Limitations of Traditional Methods](#limitations-of-traditional-methods)
   - [Deep Learning-based MOT](#deep-learning-based-mot)
@@ -76,7 +73,6 @@
 ---
 #### Handcrafted Features
 > Rely on manually engineered features such as HOG, LBP, and color histograms.
-
 | Year | Feature | Venue | Type | Title | Link |
 |------|---------|-------|------|------------|------|
 | 2002 | LBP         | IEEE TPAMI | Texture            | Multiresolution gray-scale and rotation invariant texture classification with local binary patterns | [Paper](https://ieeexplore.ieee.org/document/1017623) |
@@ -85,10 +81,7 @@
 
 ---
 
-
-### Joint Detection and Embedding (JDE) Methods
-
-> Unify detection and re-identification within a single forward pass, trading sequential-pipeline redundancy for inter-task optimization tension.
+### Deep Learning-based MOT
 
 | Year | Method | Venue | Title | Link |
 |------|--------|-------|------------|------|
@@ -105,14 +98,6 @@
 | 2024 | PASTA       | NeurIPS | Is Multiple Object Tracking a Matter of Specialization? | [Paper](https://arxiv.org/abs/2411.00553) |
 | 2025 | CrowdTrack  | arXiv   | CrowdTrack: A Benchmark for Difficult Multiple Pedestrian Tracking in Real Scenarios | [Paper](https://arxiv.org/abs/2507.02479) |
 | 2020 | UnsupTrack  | arXiv   | Simple Unsupervised Multi-Object Tracking | [Paper](https://arxiv.org/abs/2006.02609) |
-
-
----
-### Graph-based Association Methods
-> Cast data association as relational reasoning over a graph of detections and tracklets, where message passing or structured matching replaces hand-crafted pairwise cost matrices with learned, globally aware assignment.
-
-| Year | Method | Venue | Title | Link |
-|------|--------|-------|------------|------|
 | 2018 | GAT          | ICLR  | Graph Attention Networks | [Paper](https://arxiv.org/abs/1710.10903) |
 | 2019 | EDA_GNN      | arXiv | Graph Neural Based End-to-end Data Association Framework for Online Multiple-Object Tracking | [Paper](https://arxiv.org/abs/1907.05315) |
 | 2020 | MPNTracker   | CVPR  | Learning a Neural Solver for Multiple Object Tracking | [Paper](https://arxiv.org/abs/1912.07515) |
@@ -126,14 +111,6 @@
 | 2023 | TransMOT     | WACV  | TransMOT: Spatial-Temporal Graph Transformer for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2104.00194) |
 | 2023 | MotionTrack  | CVPR  | MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2303.10404) |
 | 2023 | TrackFlow    | ICCV  | TrackFlow: Multi-Object Tracking with Normalizing Flows | [Paper](https://arxiv.org/abs/2308.11513) |
-
----
-### End-to-End Transformer-based Tracking Methods
-
-> Cast localisation, identity, and temporal correspondence as a single set-prediction problem trained under a permutation-invariant objective, dissolving the modular boundaries between detection, appearance modelling, and association.
-
-| Year | Method | Venue | Title | Link |
-|------|--------|-------|------------|------|
 | 2020 | PointTrack    | ECCV    | Segment as Points for Efficient Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01550) |
 | 2020 | PointTrack++  | arXiv   | PointTrack++ for Effective Online Multi-Object Tracking and Segmentation | [Paper](https://arxiv.org/abs/2007.01549) |
 | 2021 | TransTrack    | arXiv   | TransTrack: Multiple Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2012.15460) |
