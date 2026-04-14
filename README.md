@@ -11,16 +11,14 @@
 
 - [📦 Datasets](#-datasets)
 - [📏 Metrics](#-metrics)
-- [🔬 Methods](#-methods)
-  - [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
+- [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
     - [Handcrafted Features](#handcrafted-features)
-  - [Deep Learning-based MOT](#deep-learning-based-mot)
-    - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
-    - [Joint Detection and Embedding](#joint-detection-and-embedding)
-    - [Graph-based Association](#graph-based-association)
-    - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
-- [📝 Citation](#-citation)
-
+- [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
+- [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
+- [Graph-based and Joint Learning Approaches](#graph-based and joint learning approaches)
+  - [Joint Detection and Embedding](#joint-detection-and-embedding)
+  - [Graph-based Association](#graph-based-association)
+    
 ---
 
 ## 📦 Datasets
@@ -52,9 +50,8 @@
 
 ---
 
-## 🔬 Methods
 
-### Traditional Object Tracking Methods
+## 🔬 Traditional Object Tracking Methods
 
 > Classical tracking approaches prior to deep learning, relying on probabilistic models and handcrafted representations.
 
@@ -83,11 +80,9 @@
 
 ---
 
-### Deep Learning-based MOT
 
-> Methods leveraging deep neural networks for detection, appearance modeling, and data association.
 
-#### Tracking-by-Detection Pipeline
+## Tracking-by-Detection Pipeline
 
 > Separate detection and association stages; association typically uses IoU or ReID features.
 
@@ -112,8 +107,31 @@
 | 2024 | UCMCTrack | AAAI | Association | UCMCTrack: Multi-Object Tracking with Uniform Camera Motion Compensation | [Paper](https://arxiv.org/abs/2312.08952) |
 | 2024 | Hybrid-SORT | AAAI | Association | Hybrid-SORT: Weak Cues Matter for Online Multi-Object Tracking | [Paper](https://arxiv.org/abs/2308.00783) |
 
+## End-to-End Transformer-based Tracking
+
+> Formulate tracking as a sequence-to-sequence problem using Transformer architectures.
+
+| Year | Method | Publication | Title | Link |
+|------|--------|-------|-------|------|
+| 2021 | TransTrack | arXiv | TransTrack: Multiple Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2012.15460) |
+| 2021 | PermaTrack | ICCV | Learning to Track with Object Permanence | [Paper](https://arxiv.org/abs/2103.14258) |
+| 2022 | TrackFormer | CVPR | TrackFormer: Multi-Object Tracking with Transformers | [Paper](https://arxiv.org/abs/2101.02702) |
+| 2022 | MOTR | ECCV | MOTR: End-to-End Multiple-Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2105.03247) |
+| 2022 | GTR | CVPR | Global Tracking Transformers | [Paper](https://arxiv.org/abs/2203.13250) |
+| 2022 | MeMOT | CVPR | MeMOT: Multi-Object Tracking with Memory | [Paper](https://arxiv.org/abs/2203.16761) |
+| 2022 | TransCenter | TPAMI | TransCenter: Transformers with Dense Representations for Multiple-Object Tracking | [Paper](https://arxiv.org/abs/2103.15145) |
+| 2022 | P3AFormer | ECCV | Tracking Objects as Pixel-wise Distributions | [Paper](https://arxiv.org/abs/2207.05518) |
+| 2022 | UTT | CVPR | Unified Transformer Tracker for Object Tracking | [Paper](https://arxiv.org/abs/2203.15175) |
+| 2022 | Unicorn | ECCV | Towards Grand Unification of Object Tracking | [Paper](https://arxiv.org/abs/2207.07078) |
+| 2023 | MeMOTR | ICCV | MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2307.15700) |
+| 2024 | MASA | CVPR | Matching Anything by Segmenting Anything | [Paper](https://arxiv.org/abs/2406.04221) |
+| 2024 | GeneralTrack | CVPR | Towards Generalizable Multi-Object Tracking | [Paper](https://arxiv.org/abs/2406.00429) |
+| 2024 | SambaMOTR | arXiv | Samba: Synchronized Set-of-Sequences Modeling for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2410.01806) |
+| 2025 | CO-MOT | ICLR | Bridging the Gap Between End-to-end and Non-End-to-end Multi-Object Tracking | [Paper](https://arxiv.org/abs/2305.12724) |
+| 2025 | MOTIP | CVPR | Multiple Object Tracking as ID Prediction | [Paper](https://arxiv.org/abs/2403.16848) |
 
 
+##  Graph-based and Joint Learning Approaches
 #### Joint Detection and Embedding
 
 > Unify detection and ReID feature extraction in a single network.
@@ -156,28 +174,7 @@
 | 2023 | MotionTrack | CVPR | MotionTrack: Learning Robust Short-term and Long-term Motions for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2303.10404) |
 | 2023 | TrackFlow | ICCV | TrackFlow: Multi-Object Tracking with Normalizing Flows | [Paper](https://arxiv.org/abs/2308.11513) |
 
-#### End-to-End Transformer-based Tracking
 
-> Formulate tracking as a sequence-to-sequence problem using Transformer architectures.
-
-| Year | Method | Publication | Title | Link |
-|------|--------|-------|-------|------|
-| 2021 | TransTrack | arXiv | TransTrack: Multiple Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2012.15460) |
-| 2021 | PermaTrack | ICCV | Learning to Track with Object Permanence | [Paper](https://arxiv.org/abs/2103.14258) |
-| 2022 | TrackFormer | CVPR | TrackFormer: Multi-Object Tracking with Transformers | [Paper](https://arxiv.org/abs/2101.02702) |
-| 2022 | MOTR | ECCV | MOTR: End-to-End Multiple-Object Tracking with Transformer | [Paper](https://arxiv.org/abs/2105.03247) |
-| 2022 | GTR | CVPR | Global Tracking Transformers | [Paper](https://arxiv.org/abs/2203.13250) |
-| 2022 | MeMOT | CVPR | MeMOT: Multi-Object Tracking with Memory | [Paper](https://arxiv.org/abs/2203.16761) |
-| 2022 | TransCenter | TPAMI | TransCenter: Transformers with Dense Representations for Multiple-Object Tracking | [Paper](https://arxiv.org/abs/2103.15145) |
-| 2022 | P3AFormer | ECCV | Tracking Objects as Pixel-wise Distributions | [Paper](https://arxiv.org/abs/2207.05518) |
-| 2022 | UTT | CVPR | Unified Transformer Tracker for Object Tracking | [Paper](https://arxiv.org/abs/2203.15175) |
-| 2022 | Unicorn | ECCV | Towards Grand Unification of Object Tracking | [Paper](https://arxiv.org/abs/2207.07078) |
-| 2023 | MeMOTR | ICCV | MeMOTR: Long-Term Memory-Augmented Transformer for Multi-Object Tracking | [Paper](https://arxiv.org/abs/2307.15700) |
-| 2024 | MASA | CVPR | Matching Anything by Segmenting Anything | [Paper](https://arxiv.org/abs/2406.04221) |
-| 2024 | GeneralTrack | CVPR | Towards Generalizable Multi-Object Tracking | [Paper](https://arxiv.org/abs/2406.00429) |
-| 2024 | SambaMOTR | arXiv | Samba: Synchronized Set-of-Sequences Modeling for Multiple Object Tracking | [Paper](https://arxiv.org/abs/2410.01806) |
-| 2025 | CO-MOT | ICLR | Bridging the Gap Between End-to-end and Non-End-to-end Multi-Object Tracking | [Paper](https://arxiv.org/abs/2305.12724) |
-| 2025 | MOTIP | CVPR | Multiple Object Tracking as ID Prediction | [Paper](https://arxiv.org/abs/2403.16848) |
 
 ---
 
