@@ -15,7 +15,7 @@
     - [Handcrafted Features](#handcrafted-features)
 - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
 - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
-- [Graph-based and Joint Learning Approaches](#graph-based and joint learning approaches)
+- [Graph-based and Joint Learning Approaches](#graph-based-and-joint-learning-approaches)
   - [Joint Detection and Embedding](#joint-detection-and-embedding)
   - [Graph-based Association](#graph-based-association)
     
