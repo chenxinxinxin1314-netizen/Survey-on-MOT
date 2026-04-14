@@ -176,20 +176,6 @@
 
 
 
----
-
-## 📝 Citation
-
-If you find this survey helpful, please consider citing:
-
-```bibtex
-@article{yourname2025mot,
-  title   = {A Survey on Multi-Object Tracking},
-  author  = {Your Name},
-  journal = {arXiv preprint arXiv:xxxx.xxxxx},
-  year    = {2025}
-}
-```
 
 ---
 
