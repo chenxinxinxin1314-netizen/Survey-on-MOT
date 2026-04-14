@@ -51,7 +51,7 @@
 ---
 
 
-## 🔬 Traditional Object Tracking Methods
+##  Traditional Object Tracking Methods
 
 > Classical tracking approaches prior to deep learning, relying on probabilistic models and handcrafted representations.
 
