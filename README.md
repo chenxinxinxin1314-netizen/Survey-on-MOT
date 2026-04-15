@@ -11,8 +11,6 @@
 
 - [📦 Datasets](#-datasets)
 - [📏 Metrics](#-metrics)
-- [Traditional Object Tracking Methods](#traditional-object-tracking-methods)
-    - [Handcrafted Features](#handcrafted-features)
 - [Tracking-by-Detection Pipeline](#tracking-by-detection-pipeline)
 - [End-to-End Transformer-based Tracking](#end-to-end-transformer-based-tracking)
 - [Graph-based and Joint Learning Approaches](#graph-based-and-joint-learning-approaches)
@@ -47,36 +45,6 @@
 | ML | Mostly Lost | — | % of GT trajectories covered < 20% of lifespan |
 | IDs | Identity Switches | — | Total count of incorrect identity changes |
 | FPS | Frames Per Second | — | Inference speed; reflects real-time applicability |
-
----
-
-
-##  Traditional Object Tracking Methods
-
-> Classical tracking approaches prior to deep learning, relying on probabilistic models and handcrafted representations.
-
-| Year | Method | Publication | Title | Link |
-|------|--------|-------|-------|------|
-| 1960 | Kalman Filter | J. Basic Engineering | A New Approach to Linear Filtering and Prediction Problems | [Paper](https://ieeexplore.ieee.org/abstract/document/5311910) |
-| 2002 | Particle Filter | IEEE Trans. Signal Processing | A tutorial on particle filters for online nonlinear/non-Gaussian Bayesian tracking | [Paper](https://ieeexplore.ieee.org/document/978374) |
-| 2003 | Mean Shift | IEEE TPAMI | Kernel-based object tracking | [Paper](https://ieeexplore.ieee.org/document/1195991) |
-| 2004 | SVM Tracker | IEEE TPAMI | Support vector tracking | [Paper](https://ieeexplore.ieee.org/document/1307012) |
-| 2009 | MILTrack | CVPR | Visual tracking with online Multiple Instance Learning | [Paper](https://ieeexplore.ieee.org/document/5206737) |
-| 2015 | Struck | IEEE TPAMI | Struck: Structured Output Tracking with Kernels | [Paper](https://ieeexplore.ieee.org/document/7360205) |
-| 2010 | MOSSE | CVPR | Visual object tracking using adaptive correlation filters | [Paper](https://ieeexplore.ieee.org/document/5539960) |
-| 2014 | KCF | IEEE TPAMI | High-Speed Tracking with Kernelized Correlation Filters | [Paper](https://ieeexplore.ieee.org/document/6870486) \| [Code](https://github.com/joaofaro/KCFcpp) |
-| 2017 | ECO | CVPR | ECO: Efficient Convolution Operators for Tracking | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Danelljan_ECO_Efficient_Convolution_CVPR_2017_paper.pdf) \| [Code](https://github.com/martin-danelljan/ECO) |
-| 2017 | CSR-DCF | CVPR | Discriminative Correlation Filter with Channel and Spatial Reliability | [Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Lukezic_Discriminative_Correlation_Filter_CVPR_2017_paper.pdf) \| [Code](https://github.com/alanlukezic/csr-dcf) |
-
-#### Handcrafted Features
-
-> Rely on manually engineered features such as HOG, LBP, and color histograms.
-
-| Year | Feature | Publication | Type | Title | Link |
-|------|---------|-------|------|-------|------|
-| 2002 | LBP | IEEE TPAMI | Texture | Multiresolution gray-scale and rotation invariant texture classification with local binary patterns | [Paper](https://ieeexplore.ieee.org/document/1017623) |
-| 2005 | HOG | CVPR | Shape / Gradient | Histograms of oriented gradients for human detection | [Paper](https://ieeexplore.ieee.org/document/1467360) |
-| 2009 | Color Names | IEEE TIP | Color / Appearance | Learning Color Names for Real-World Applications | [Paper](https://ieeexplore.ieee.org/document/4982667) |
 
 ---
 
