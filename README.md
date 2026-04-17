@@ -49,7 +49,6 @@
 ---
 
 
-
 ## Tracking-by-Detection Pipeline
 
 > Separate detection and association stages; association typically uses IoU or ReID features.
